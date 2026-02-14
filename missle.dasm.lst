@@ -1,0 +1,2376 @@
+------- FILE missle.dasm LEVEL 1 PASS 1
+      1  0000 ????						; Disassembly of /Users/chrisarehart/Downloads/missle_cmd.bin
+      2  0000 ????						; Disassembled Fri Feb 13 21:10:06 2026
+      3  0000 ????						; Using DiStella v3.02-SNAPSHOT
+      4  0000 ????						;
+      5  0000 ????						; Command Line: ./distella -f /Users/chrisarehart/Downloads/missle_cmd.bin
+      6  0000 ????						;
+      7  0000 ????
+      8  0000 ????	       00 00	   VSYNC      =	$00
+      9  0000 ????	       00 01	   VBLANK     =	$01
+     10  0000 ????	       00 02	   WSYNC      =	$02
+     11  0000 ????	       00 04	   NUSIZ0     =	$04
+     12  0000 ????	       00 05	   NUSIZ1     =	$05
+     13  0000 ????	       00 06	   COLUP0     =	$06
+     14  0000 ????	       00 08	   COLUPF     =	$08
+     15  0000 ????	       00 10	   RESP0      =	$10
+     16  0000 ????	       00 16	   AUDC1      =	$16
+     17  0000 ????	       00 17	   AUDF0      =	$17
+     18  0000 ????	       00 20	   HMP0       =	$20
+     19  0000 ????	       00 28	   RESMP0     =	$28
+     20  0000 ????	       00 2a	   HMOVE      =	$2A
+     21  0000 ????	       00 3c	   INPT4      =	$3C
+     22  0000 ????	       02 81	   SWACNT     =	$0281
+     23  0000 ????	       02 82	   SWCHB      =	$0282
+     24  0000 ????	       02 96	   TIM64T     =	$0296
+     25  0000 ????	       f3 10	   LF310      =	$F310
+     26  0000 ????	       f4 6e	   LF46E      =	$F46E
+     27  0000 ????	       fd c7	   LFDC7      =	$FDC7
+     28  0000 ????	       fd d5	   LFDD5      =	$FDD5
+     29  0000 ????
+     30  f000					      ORG	$F000
+missle.dasm (31): error: Unknown Mnemonic 'LDX'.
+     31  f000				   LF000      LDX	#$04
+missle.dasm (32): error: Unknown Mnemonic 'LDA'.
+     32  f000				   LF002      LDA	#$02
+missle.dasm (33): error: Unknown Mnemonic 'CPX'.
+     33  f000					      CPX	#$02
+missle.dasm (34): error: Unknown Mnemonic 'BCS'.
+     34  f000					      BCS	LF011
+missle.dasm (35): error: Unknown Mnemonic 'LSR'.
+     35  f000					      LSR	A
+missle.dasm (36): error: Unknown Mnemonic 'LDY'.
+     36  f000					      LDY	$A1
+missle.dasm (37): error: Unknown Mnemonic 'CPY'.
+     37  f000					      CPY	#$F0
+missle.dasm (38): error: Unknown Mnemonic 'BNE'.
+     38  f000					      BNE	LF011
+missle.dasm (39): error: Unknown Mnemonic 'LDA'.
+     39  f000					      LDA	#$FC
+missle.dasm (40): error: Unknown Mnemonic 'CLC'.
+     40  f000				   LF011      CLC
+missle.dasm (41): error: Unknown Mnemonic 'ADC'.
+     41  f000					      ADC	$86,X
+missle.dasm (42): error: Unknown Mnemonic 'LDY'.
+     42  f000					      LDY	#$02
+missle.dasm (43): error: Unknown Mnemonic 'SEC'.
+     43  f000					      SEC
+missle.dasm (44): error: Unknown Mnemonic 'INY'.
+     44  f000				   LF017      INY
+missle.dasm (45): error: Unknown Mnemonic 'SBC'.
+     45  f000					      SBC	#$0F
+missle.dasm (46): error: Unknown Mnemonic 'BCS'.
+     46  f000					      BCS	LF017
+missle.dasm (47): error: Unknown Mnemonic 'EOR'.
+     47  f000					      EOR	#$FF
+missle.dasm (48): error: Unknown Mnemonic 'SBC'.
+     48  f000					      SBC	#$06
+missle.dasm (49): error: Unknown Mnemonic 'ASL'.
+     49  f000					      ASL	A
+missle.dasm (50): error: Unknown Mnemonic 'ASL'.
+     50  f000					      ASL	A
+missle.dasm (51): error: Unknown Mnemonic 'ASL'.
+     51  f000					      ASL	A
+missle.dasm (52): error: Unknown Mnemonic 'ASL'.
+     52  f000					      ASL	A
+missle.dasm (53): error: Unknown Mnemonic 'STA'.
+     53  f000					      STA	WSYNC
+missle.dasm (54): error: Unknown Mnemonic 'DEY'.
+     54  f000				   LF026      DEY
+missle.dasm (55): error: Unknown Mnemonic 'BPL'.
+     55  f000					      BPL	LF026
+missle.dasm (56): error: Unknown Mnemonic 'STA'.
+     56  f000					      STA	RESP0,X
+missle.dasm (57): error: Unknown Mnemonic 'STA'.
+     57  f000					      STA	HMP0,X
+missle.dasm (58): error: Unknown Mnemonic 'LDA'.
+     58  f000					      LDA	$A1
+missle.dasm (59): error: Unknown Mnemonic 'BNE'.
+     59  f000					      BNE	LF034
+missle.dasm (60): error: Unknown Mnemonic 'DEX'.
+     60  f000					      DEX
+missle.dasm (61): error: Unknown Mnemonic 'BPL'.
+     61  f000					      BPL	LF002
+missle.dasm (62): error: Unknown Mnemonic 'STA'.
+     62  f000				   LF034      STA	WSYNC
+missle.dasm (63): error: Unknown Mnemonic 'STA'.
+     63  f000					      STA	HMOVE
+missle.dasm (64): error: Unknown Mnemonic 'RTS'.
+     64  f000					      RTS
+     65  f000
+     66  f000
+     67  f000				   START
+missle.dasm (68): error: Unknown Mnemonic 'CLD'.
+     68  f000					      CLD
+missle.dasm (69): error: Unknown Mnemonic 'LDX'.
+     69  f000					      LDX	#$00
+missle.dasm (70): error: Unknown Mnemonic 'STX'.
+     70  f000					      STX	SWACNT
+missle.dasm (71): error: Unknown Mnemonic 'TXS'.
+     71  f000					      TXS
+missle.dasm (72): error: Unknown Mnemonic 'PHA'.
+     72  f000					      PHA
+missle.dasm (73): error: Unknown Mnemonic 'TXA'.
+     73  f000					      TXA
+missle.dasm (74): error: Unknown Mnemonic 'PHA'.
+     74  f000				   LF042      PHA
+missle.dasm (75): error: Unknown Mnemonic 'INX'.
+     75  f000					      INX
+missle.dasm (76): error: Unknown Mnemonic 'BNE'.
+     76  f000					      BNE	LF042
+missle.dasm (77): error: Unknown Mnemonic 'LDA'.
+     77  f000					      LDA	#$87
+missle.dasm (78): error: Unknown Mnemonic 'STA'.
+     78  f000					      STA	$DB
+missle.dasm (79): error: Unknown Mnemonic 'LDA'.
+     79  f000					      LDA	#$01
+missle.dasm (80): error: Unknown Mnemonic 'STA'.
+     80  f000					      STA	$E9
+missle.dasm (81): error: Unknown Mnemonic 'LDA'.
+     81  f000					      LDA	#$02
+missle.dasm (82): error: Unknown Mnemonic 'STA'.
+     82  f000					      STA	VBLANK
+missle.dasm (83): error: Unknown Mnemonic 'STA'.
+     83  f000					      STA	VSYNC
+missle.dasm (84): error: Unknown Mnemonic 'STA'.
+     84  f000					      STA	WSYNC
+missle.dasm (85): error: Unknown Mnemonic 'STA'.
+     85  f000					      STA	WSYNC
+missle.dasm (86): error: Unknown Mnemonic 'STA'.
+     86  f000					      STA	WSYNC
+missle.dasm (87): error: Unknown Mnemonic 'LSR'.
+     87  f000					      LSR	A
+missle.dasm (88): error: Unknown Mnemonic 'STA'.
+     88  f000					      STA	VSYNC
+missle.dasm (89): error: Unknown Mnemonic 'LDA'.
+     89  f000					      LDA	#$30
+missle.dasm (90): error: Unknown Mnemonic 'STA'.
+     90  f000					      STA	TIM64T
+missle.dasm (91): error: Unknown Mnemonic 'INC'.
+     91  f000					      INC	$80
+missle.dasm (92): error: Unknown Mnemonic 'BNE'.
+     92  f000					      BNE	LF074
+missle.dasm (93): error: Unknown Mnemonic 'INC'.
+     93  f000					      INC	$E8
+missle.dasm (94): error: Unknown Mnemonic 'LDA'.
+     94  f000					      LDA	$DB
+missle.dasm (95): error: Unknown Mnemonic 'AND'.
+     95  f000					      AND	$F8
+missle.dasm (96): error: Unknown Mnemonic 'BPL'.
+     96  f000					      BPL	LF074
+missle.dasm (97): error: Unknown Mnemonic 'LDA'.
+     97  f000					      LDA	$F5
+missle.dasm (98): error: Unknown Mnemonic 'EOR'.
+     98  f000					      EOR	#$01
+missle.dasm (99): error: Unknown Mnemonic 'STA'.
+     99  f000					      STA	$F5
+missle.dasm (100): error: Unknown Mnemonic 'LDA'.
+    100  f000				   LF074      LDA	$DC
+missle.dasm (101): error: Unknown Mnemonic 'BEQ'.
+    101  f000					      BEQ	LF07F
+missle.dasm (102): error: Unknown Mnemonic 'DEC'.
+    102  f000					      DEC	$DC
+missle.dasm (103): error: Unknown Mnemonic 'BNE'.
+    103  f000					      BNE	LF07F
+missle.dasm (104): error: Unknown Mnemonic 'JSR'.
+    104  f000					      JSR	LFCA5
+missle.dasm (105): error: Unknown Mnemonic 'BIT'.
+    105  f000				   LF07F      BIT	$DB
+missle.dasm (106): error: Unknown Mnemonic 'BPL'.
+    106  f000					      BPL	LF087
+missle.dasm (107): error: Unknown Mnemonic 'LDA'.
+    107  f000					      LDA	#$FF
+missle.dasm (108): error: Unknown Mnemonic 'STA'.
+    108  f000					      STA	$DE
+missle.dasm (109): error: Unknown Mnemonic 'LDA'.
+    109  f000				   LF087      LDA	$DE
+missle.dasm (110): error: Unknown Mnemonic 'CMP'.
+    110  f000					      CMP	#$E8
+missle.dasm (111): error: Unknown Mnemonic 'BNE'.
+    111  f000					      BNE	LF0BA
+missle.dasm (112): error: Unknown Mnemonic 'LDA'.
+    112  f000					      LDA	$E0
+missle.dasm (113): error: Unknown Mnemonic 'BNE'.
+    113  f000					      BNE	LF0AD
+missle.dasm (114): error: Unknown Mnemonic 'LDA'.
+    114  f000					      LDA	#$07
+missle.dasm (115): error: Unknown Mnemonic 'STA'.
+    115  f000					      STA	$E0
+missle.dasm (116): error: Unknown Mnemonic 'LDA'.
+    116  f000					      LDA	$DD
+missle.dasm (117): error: Unknown Mnemonic 'BNE'.
+    117  f000					      BNE	LF0A0
+missle.dasm (118): error: Unknown Mnemonic 'JSR'.
+    118  f000					      JSR	LFCA5
+missle.dasm (119): error: Unknown Mnemonic 'LDA'.
+    119  f000					      LDA	$DD
+missle.dasm (120): error: Unknown Mnemonic 'BEQ'.
+    120  f000					      BEQ	LF0B0
+missle.dasm (121): error: Unknown Mnemonic 'LDA'.
+    121  f000				   LF0A0      LDA	#$04
+missle.dasm (122): error: Unknown Mnemonic 'STA'.
+    122  f000					      STA	$DF
+missle.dasm (123): error: Unknown Mnemonic 'DEC'.
+    123  f000					      DEC	$DD
+missle.dasm (124): error: Unknown Mnemonic 'LDA'.
+    124  f000					      LDA	#$05
+missle.dasm (125): error: Unknown Mnemonic 'LDY'.
+    125  f000					      LDY	#$00
+missle.dasm (126): error: Unknown Mnemonic 'JSR'.
+    126  f000					      JSR	LFCC1
+missle.dasm (127): error: Unknown Mnemonic 'JMP'.
+    127  f000				   LF0AD      JMP	LF13E
+missle.dasm (128): error: Unknown Mnemonic 'LDA'.
+    128  f000				   LF0B0      LDA	#$E0
+missle.dasm (129): error: Unknown Mnemonic 'STA'.
+    129  f000					      STA	$DE
+missle.dasm (130): error: Unknown Mnemonic 'LDA'.
+    130  f000					      LDA	#$00
+missle.dasm (131): error: Unknown Mnemonic 'STA'.
+    131  f000					      STA	$DF
+missle.dasm (132): error: Unknown Mnemonic 'STA'.
+    132  f000					      STA	$E0
+missle.dasm (133): error: Unknown Mnemonic 'LDA'.
+    133  f000				   LF0BA      LDA	$DE
+missle.dasm (134): error: Unknown Mnemonic 'CMP'.
+    134  f000					      CMP	#$E0
+missle.dasm (135): error: Unknown Mnemonic 'BNE'.
+    135  f000					      BNE	LF0FB
+missle.dasm (136): error: Unknown Mnemonic 'LDA'.
+    136  f000					      LDA	$80
+missle.dasm (137): error: Unknown Mnemonic 'AND'.
+    137  f000					      AND	#$0F
+missle.dasm (138): error: Unknown Mnemonic 'BNE'.
+    138  f000					      BNE	LF13E
+missle.dasm (139): error: Unknown Mnemonic 'LDY'.
+    139  f000					      LDY	$E0
+missle.dasm (140): error: Unknown Mnemonic 'LDA'.
+    140  f000					      LDA	#$25
+missle.dasm (141): error: Unknown Mnemonic 'CPY'.
+    141  f000				   LF0CA      CPY	#$06
+missle.dasm (142): error: Unknown Mnemonic 'BEQ'.
+    142  f000					      BEQ	LF0E9
+missle.dasm (143): error: Unknown Mnemonic 'LDX'.
+    143  f000					      LDX	LFDFF,Y
+missle.dasm (144): error: Unknown Mnemonic 'INY'.
+    144  f000					      INY
+missle.dasm (145): error: Unknown Mnemonic 'CMP'.
+    145  f000					      CMP	$A9,X
+missle.dasm (146): error: Unknown Mnemonic 'BNE'.
+    146  f000					      BNE	LF0CA
+missle.dasm (147): error: Unknown Mnemonic 'LDA'.
+    147  f000					      LDA	#$5B
+missle.dasm (148): error: Unknown Mnemonic 'STA'.
+    148  f000					      STA	$A9,X
+missle.dasm (149): error: Unknown Mnemonic 'STY'.
+    149  f000					      STY	$E0
+missle.dasm (150): error: Unknown Mnemonic 'LDA'.
+    150  f000					      LDA	#$00
+missle.dasm (151): error: Unknown Mnemonic 'LDY'.
+    151  f000					      LDY	#$01
+missle.dasm (152): error: Unknown Mnemonic 'JSR'.
+    152  f000					      JSR	LFCC1
+missle.dasm (153): error: Unknown Mnemonic 'LDA'.
+    153  f000					      LDA	#$05
+missle.dasm (154): error: Unknown Mnemonic 'STA'.
+    154  f000					      STA	$DF
+missle.dasm (155): error: Unknown Mnemonic 'BNE'.
+    155  f000					      BNE	LF13E
+missle.dasm (156): error: Unknown Mnemonic 'LDA'.
+    156  f000				   LF0E9      LDA	#$A8
+missle.dasm (157): error: Unknown Mnemonic 'STA'.
+    157  f000					      STA	$DE
+missle.dasm (158): error: Unknown Mnemonic 'LDA'.
+    158  f000					      LDA	#$04
+missle.dasm (159): error: Unknown Mnemonic 'STA'.
+    159  f000					      STA	$E0
+missle.dasm (160): error: Unknown Mnemonic 'LDA'.
+    160  f000					      LDA	#$01
+missle.dasm (161): error: Unknown Mnemonic 'STA'.
+    161  f000					      STA	$DF
+missle.dasm (162): error: Unknown Mnemonic 'JSR'.
+    162  f000					      JSR	LFD81
+missle.dasm (163): error: Unknown Mnemonic 'JMP'.
+    163  f000					      JMP	LF470
+missle.dasm (164): error: Unknown Mnemonic 'LDA'.
+    164  f000				   LF0FB      LDA	$DF
+missle.dasm (165): error: Unknown Mnemonic 'CMP'.
+    165  f000					      CMP	#$06
+missle.dasm (166): error: Unknown Mnemonic 'BEQ'.
+    166  f000					      BEQ	LF13E
+missle.dasm (167): error: Unknown Mnemonic 'BIT'.
+    167  f000					      BIT	$DE
+missle.dasm (168): error: Unknown Mnemonic 'BPL'.
+    168  f000					      BPL	LF13E
+missle.dasm (169): error: Unknown Mnemonic 'LDA'.
+    169  f000					      LDA	$80
+missle.dasm (170): error: Unknown Mnemonic 'AND'.
+    170  f000					      AND	#$03
+missle.dasm (171): error: Unknown Mnemonic 'BNE'.
+    171  f000					      BNE	LF13E
+missle.dasm (172): error: Unknown Mnemonic 'DEC'.
+    172  f000					      DEC	$DE
+missle.dasm (173): error: Unknown Mnemonic 'BMI'.
+    173  f000					      BMI	LF112
+missle.dasm (174): error: Unknown Mnemonic 'JMP'.
+    174  f000					      JMP	LF1DF
+missle.dasm (175): error: Unknown Mnemonic 'LDA'.
+    175  f000				   LF112      LDA	$DE
+missle.dasm (176): error: Unknown Mnemonic 'CMP'.
+    176  f000					      CMP	#$A0
+missle.dasm (177): error: Unknown Mnemonic 'BNE'.
+    177  f000					      BNE	LF13E
+missle.dasm (178): error: Unknown Mnemonic 'LDA'.
+    178  f000					      LDA	#$32
+missle.dasm (179): error: Unknown Mnemonic 'STA'.
+    179  f000					      STA	$90
+missle.dasm (180): error: Unknown Mnemonic 'STA'.
+    180  f000					      STA	$8E
+missle.dasm (181): error: Unknown Mnemonic 'LDA'.
+    181  f000					      LDA	$F1
+missle.dasm (182): error: Unknown Mnemonic 'ORA'.
+    182  f000					      ORA	$F3
+missle.dasm (183): error: Unknown Mnemonic 'BEQ'.
+    183  f000					      BEQ	LF13B
+missle.dasm (184): error: Unknown Mnemonic 'LDA'.
+    184  f000					      LDA	$E9
+missle.dasm (185): error: Unknown Mnemonic 'CMP'.
+    185  f000					      CMP	#$35
+missle.dasm (186): error: Unknown Mnemonic 'BCC'.
+    186  f000					      BCC	LF13B
+missle.dasm (187): error: Unknown Mnemonic 'LDA'.
+    187  f000					      LDA	$F5
+missle.dasm (188): error: Unknown Mnemonic 'EOR'.
+    188  f000					      EOR	#$01
+missle.dasm (189): error: Unknown Mnemonic 'TAX'.
+    189  f000					      TAX
+missle.dasm (190): error: Unknown Mnemonic 'LDA'.
+    190  f000					      LDA	$EC,X
+missle.dasm (191): error: Unknown Mnemonic 'BEQ'.
+    191  f000					      BEQ	LF13B
+missle.dasm (192): error: Unknown Mnemonic 'INC'.
+    192  f000					      INC	$DE
+missle.dasm (193): error: Unknown Mnemonic 'BIT'.
+    193  f000					      BIT	INPT4
+missle.dasm (194): error: Unknown Mnemonic 'BMI'.
+    194  f000					      BMI	LF13E
+missle.dasm (195): error: Unknown Mnemonic 'DEC'.
+    195  f000					      DEC	$DE
+missle.dasm (196): error: Unknown Mnemonic 'JSR'.
+    196  f000				   LF13B      JSR	LFD0B
+missle.dasm (197): error: Unknown Mnemonic 'BIT'.
+    197  f000				   LF13E      BIT	$DB
+missle.dasm (198): error: Unknown Mnemonic 'BVC'.
+    198  f000					      BVC	LF152
+missle.dasm (199): error: Unknown Mnemonic 'LDA'.
+    199  f000					      LDA	SWCHB
+missle.dasm (200): error: Unknown Mnemonic 'LSR'.
+    200  f000					      LSR	A
+missle.dasm (201): error: Unknown Mnemonic 'BCC'.
+    201  f000					      BCC	LF14B
+missle.dasm (202): error: Unknown Mnemonic 'JMP'.
+    202  f000				   LF148      JMP	LF217
+missle.dasm (203): error: Unknown Mnemonic 'LSR'.
+    203  f000				   LF14B      LSR	A
+missle.dasm (204): error: Unknown Mnemonic 'BCC'.
+    204  f000					      BCC	LF148
+missle.dasm (205): error: Unknown Mnemonic 'LDA'.
+    205  f000					      LDA	#$00
+missle.dasm (206): error: Unknown Mnemonic 'STA'.
+    206  f000					      STA	$DB
+missle.dasm (207): error: Unknown Mnemonic 'LDA'.
+    207  f000				   LF152      LDA	#$25
+missle.dasm (208): error: Unknown Mnemonic 'LDY'.
+    208  f000					      LDY	#$FF
+missle.dasm (209): error: Unknown Mnemonic 'LDX'.
+    209  f000					      LDX	#$0A
+missle.dasm (210): error: Unknown Mnemonic 'STA'.
+    210  f000				   LF158      STA	$A9,X
+missle.dasm (211): error: Unknown Mnemonic 'STY'.
+    211  f000					      STY	$AA,X
+missle.dasm (212): error: Unknown Mnemonic 'STY'.
+    212  f000					      STY	$CC,X
+missle.dasm (213): error: Unknown Mnemonic 'DEX'.
+    213  f000					      DEX
+missle.dasm (214): error: Unknown Mnemonic 'DEX'.
+    214  f000					      DEX
+missle.dasm (215): error: Unknown Mnemonic 'BPL'.
+    215  f000					      BPL	LF158
+missle.dasm (216): error: Unknown Mnemonic 'INY'.
+    216  f000					      INY
+missle.dasm (217): error: Unknown Mnemonic 'LDX'.
+    217  f000					      LDX	#$05
+missle.dasm (218): error: Unknown Mnemonic 'STY'.
+    218  f000				   LF165      STY	$EF,X
+missle.dasm (219): error: Unknown Mnemonic 'DEX'.
+    219  f000					      DEX
+missle.dasm (220): error: Unknown Mnemonic 'BPL'.
+    220  f000					      BPL	LF165
+missle.dasm (221): error: Unknown Mnemonic 'STY'.
+    221  f000					      STY	$ED
+missle.dasm (222): error: Unknown Mnemonic 'STY'.
+    222  f000					      STY	$FB
+missle.dasm (223): error: Unknown Mnemonic 'STY'.
+    223  f000					      STY	$F6
+missle.dasm (224): error: Unknown Mnemonic 'STY'.
+    224  f000					      STY	$F7
+missle.dasm (225): error: Unknown Mnemonic 'LDA'.
+    225  f000					      LDA	$E9
+missle.dasm (226): error: Unknown Mnemonic 'LDX'.
+    226  f000					      LDX	#$3F
+missle.dasm (227): error: Unknown Mnemonic 'STX'.
+    227  f000					      STX	$EC
+missle.dasm (228): error: Unknown Mnemonic 'CMP'.
+    228  f000					      CMP	#$18
+missle.dasm (229): error: Unknown Mnemonic 'BCC'.
+    229  f000					      BCC	LF187
+missle.dasm (230): error: Unknown Mnemonic 'SED'.
+    230  f000					      SED
+missle.dasm (231): error: Unknown Mnemonic 'SBC'.
+    231  f000					      SBC	#$34
+missle.dasm (232): error: Unknown Mnemonic 'BCS'.
+    232  f000					      BCS	LF183
+missle.dasm (233): error: Unknown Mnemonic 'ADC'.
+    233  f000					      ADC	#$17
+missle.dasm (234): error: Unknown Mnemonic 'CLD'.
+    234  f000				   LF183      CLD
+missle.dasm (235): error: Unknown Mnemonic 'STX'.
+    235  f000					      STX	$ED
+missle.dasm (236): error: Unknown Mnemonic 'INY'.
+    236  f000					      INY
+missle.dasm (237): error: Unknown Mnemonic 'STY'.
+    237  f000				   LF187      STY	$F5
+missle.dasm (238): error: Unknown Mnemonic 'TAX'.
+    238  f000					      TAX
+missle.dasm (239): error: Unknown Mnemonic 'TYA'.
+    239  f000					      TYA
+missle.dasm (240): error: Unknown Mnemonic 'ROR'.
+    240  f000					      ROR	A
+missle.dasm (241): error: Unknown Mnemonic 'ORA'.
+    241  f000					      ORA	LFE72,X
+missle.dasm (242): error: Unknown Mnemonic 'STA'.
+    242  f000					      STA	$F8
+missle.dasm (243): error: Unknown Mnemonic 'CPX'.
+    243  f000					      CPX	#$17
+missle.dasm (244): error: Unknown Mnemonic 'BNE'.
+    244  f000					      BNE	LF199
+missle.dasm (245): error: Unknown Mnemonic 'LDY'.
+    245  f000					      LDY	#$40
+missle.dasm (246): error: Unknown Mnemonic 'STY'.
+    246  f000					      STY	$FB
+missle.dasm (247): error: Unknown Mnemonic 'AND'.
+    247  f000				   LF199      AND	#$0E
+missle.dasm (248): error: Unknown Mnemonic 'TAX'.
+    248  f000					      TAX
+missle.dasm (249): error: Unknown Mnemonic 'DEX'.
+    249  f000					      DEX
+missle.dasm (250): error: Unknown Mnemonic 'STX'.
+    250  f000					      STX	$E7
+missle.dasm (251): error: Unknown Mnemonic 'LDA'.
+    251  f000					      LDA	#$54
+missle.dasm (252): error: Unknown Mnemonic 'STA'.
+    252  f000					      STA	$93
+missle.dasm (253): error: Unknown Mnemonic 'STA'.
+    253  f000					      STA	$94
+missle.dasm (254): error: Unknown Mnemonic 'LDA'.
+    254  f000					      LDA	$DB
+missle.dasm (255): error: Unknown Mnemonic 'ORA'.
+    255  f000					      ORA	#$40
+missle.dasm (256): error: Unknown Mnemonic 'STA'.
+    256  f000					      STA	$DB
+missle.dasm (257): error: Unknown Mnemonic 'BIT'.
+    257  f000					      BIT	$DB
+missle.dasm (258): error: Unknown Mnemonic 'BMI'.
+    258  f000					      BMI	LF1DC
+missle.dasm (259): error: Unknown Mnemonic 'LDA'.
+    259  f000					      LDA	#$32
+missle.dasm (260): error: Unknown Mnemonic 'STA'.
+    260  f000					      STA	$8E
+missle.dasm (261): error: Unknown Mnemonic 'STA'.
+    261  f000					      STA	$90
+missle.dasm (262): error: Unknown Mnemonic 'LDX'.
+    262  f000					      LDX	#$01
+missle.dasm (263): error: Unknown Mnemonic 'STX'.
+    263  f000					      STX	$DF
+missle.dasm (264): error: Unknown Mnemonic 'LDX'.
+    264  f000					      LDX	#$04
+missle.dasm (265): error: Unknown Mnemonic 'STX'.
+    265  f000					      STX	$E0
+missle.dasm (266): error: Unknown Mnemonic 'LDA'.
+    266  f000					      LDA	#$13
+missle.dasm (267): error: Unknown Mnemonic 'BIT'.
+    267  f000					      BIT	$FB
+missle.dasm (268): error: Unknown Mnemonic 'BVC'.
+    268  f000					      BVC	LF1C5
+missle.dasm (269): error: Unknown Mnemonic 'LDA'.
+    269  f000					      LDA	#$FB
+missle.dasm (270): error: Unknown Mnemonic 'LDY'.
+    270  f000				   LF1C5      LDY	$E7
+missle.dasm (271): error: Unknown Mnemonic 'INY'.
+    271  f000					      INY
+missle.dasm (272): error: Unknown Mnemonic 'CLC'.
+    272  f000				   LF1C8      CLC
+missle.dasm (273): error: Unknown Mnemonic 'ADC'.
+    273  f000					      ADC	#$0D
+missle.dasm (274): error: Unknown Mnemonic 'DEY'.
+    274  f000					      DEY
+missle.dasm (275): error: Unknown Mnemonic 'BPL'.
+    275  f000					      BPL	LF1C8
+missle.dasm (276): error: Unknown Mnemonic 'STA'.
+    276  f000					      STA	$9B
+missle.dasm (277): error: Unknown Mnemonic 'LDA'.
+    277  f000					      LDA	#$B0
+missle.dasm (278): error: Unknown Mnemonic 'STA'.
+    278  f000					      STA	$DE
+missle.dasm (279): error: Unknown Mnemonic 'LDA'.
+    279  f000					      LDA	$80
+missle.dasm (280): error: Unknown Mnemonic 'ORA'.
+    280  f000					      ORA	#$02
+missle.dasm (281): error: Unknown Mnemonic 'STA'.
+    281  f000					      STA	$D8
+missle.dasm (282): error: Unknown Mnemonic 'STA'.
+    282  f000					      STA	$D9
+missle.dasm (283): error: Unknown Mnemonic 'JMP'.
+    283  f000				   LF1DC      JMP	LF217
+missle.dasm (284): error: Unknown Mnemonic 'LDY'.
+    284  f000				   LF1DF      LDY	#$0F
+missle.dasm (285): error: Unknown Mnemonic 'LDA'.
+    285  f000					      LDA	$E7
+missle.dasm (286): error: Unknown Mnemonic 'CMP'.
+    286  f000					      CMP	#$10
+missle.dasm (287): error: Unknown Mnemonic 'BCS'.
+    287  f000					      BCS	LF1E8
+missle.dasm (288): error: Unknown Mnemonic 'TAY'.
+    288  f000					      TAY
+missle.dasm (289): error: Unknown Mnemonic 'LDA'.
+    289  f000				   LF1E8      LDA	LFE51,Y
+missle.dasm (290): error: Unknown Mnemonic 'BIT'.
+    290  f000					      BIT	$FB
+missle.dasm (291): error: Unknown Mnemonic 'BVC'.
+    291  f000					      BVC	LF1F0
+missle.dasm (292): error: Unknown Mnemonic 'LSR'.
+    292  f000					      LSR	A
+missle.dasm (293): error: Unknown Mnemonic 'STA'.
+    293  f000				   LF1F0      STA	$DE
+missle.dasm (294): error: Unknown Mnemonic 'LDA'.
+    294  f000					      LDA	LFE63,Y
+missle.dasm (295): error: Unknown Mnemonic 'STA'.
+    295  f000					      STA	$EB
+missle.dasm (296): error: Unknown Mnemonic 'LDA'.
+    296  f000					      LDA	#$0A
+missle.dasm (297): error: Unknown Mnemonic 'STA'.
+    297  f000					      STA	$DD
+missle.dasm (298): error: Unknown Mnemonic 'LDA'.
+    298  f000					      LDA	#$4F
+missle.dasm (299): error: Unknown Mnemonic 'LDY'.
+    299  f000					      LDY	#$01
+missle.dasm (300): error: Unknown Mnemonic 'LDX'.
+    300  f000					      LDX	#$02
+missle.dasm (301): error: Unknown Mnemonic 'STA'.
+    301  f000				   LF201      STA	$C4,X
+missle.dasm (302): error: Unknown Mnemonic 'STY'.
+    302  f000					      STY	$C7,X
+missle.dasm (303): error: Unknown Mnemonic 'STY'.
+    303  f000					      STY	$B5,X
+missle.dasm (304): error: Unknown Mnemonic 'DEC'.
+    304  f000					      DEC	$B5,X
+missle.dasm (305): error: Unknown Mnemonic 'DEX'.
+    305  f000					      DEX
+missle.dasm (306): error: Unknown Mnemonic 'BPL'.
+    306  f000					      BPL	LF201
+missle.dasm (307): error: Unknown Mnemonic 'STX'.
+    307  f000					      STX	$91
+missle.dasm (308): error: Unknown Mnemonic 'STX'.
+    308  f000					      STX	$92
+missle.dasm (309): error: Unknown Mnemonic 'INX'.
+    309  f000				   LF210      INX
+missle.dasm (310): error: Unknown Mnemonic 'STX'.
+    310  f000					      STX	$DF
+missle.dasm (311): error: Unknown Mnemonic 'LDA'.
+    311  f000					      LDA	#$40
+missle.dasm (312): error: Unknown Mnemonic 'STA'.
+    312  f000					      STA	$DB
+missle.dasm (313): error: Unknown Mnemonic 'LDY'.
+    313  f000				   LF217      LDY	#$1F
+missle.dasm (314): error: Unknown Mnemonic 'LDA'.
+    314  f000					      LDA	SWCHB
+missle.dasm (315): error: Unknown Mnemonic 'LSR'.
+    315  f000					      LSR	A
+missle.dasm (316): error: Unknown Mnemonic 'ROR'.
+    316  f000					      ROR	A
+missle.dasm (317): error: Unknown Mnemonic 'BCS'.
+    317  f000					      BCS	LF224
+missle.dasm (318): error: Unknown Mnemonic 'BMI'.
+    318  f000					      BMI	LF224
+missle.dasm (319): error: Unknown Mnemonic 'LDY'.
+    319  f000					      LDY	#$07
+missle.dasm (320): error: Unknown Mnemonic 'STY'.
+    320  f000				   LF224      STY	$DA
+missle.dasm (321): error: Unknown Mnemonic 'LDA'.
+    321  f000					      LDA	#$FF
+missle.dasm (322): error: Unknown Mnemonic 'BCC'.
+    322  f000					      BCC	LF22E
+missle.dasm (323): error: Unknown Mnemonic 'STA'.
+    323  f000					      STA	$EA
+missle.dasm (324): error: Unknown Mnemonic 'BNE'.
+    324  f000					      BNE	LF25B
+missle.dasm (325): error: Unknown Mnemonic 'STA'.
+    325  f000				   LF22E      STA	$DB
+missle.dasm (326): error: Unknown Mnemonic 'LDA'.
+    326  f000					      LDA	$EA
+missle.dasm (327): error: Unknown Mnemonic 'BMI'.
+    327  f000					      BMI	LF23A
+missle.dasm (328): error: Unknown Mnemonic 'EOR'.
+    328  f000					      EOR	$80
+missle.dasm (329): error: Unknown Mnemonic 'AND'.
+    329  f000					      AND	$DA
+missle.dasm (330): error: Unknown Mnemonic 'BNE'.
+    330  f000					      BNE	LF25B
+missle.dasm (331): error: Unknown Mnemonic 'LDA'.
+    331  f000				   LF23A      LDA	$80
+missle.dasm (332): error: Unknown Mnemonic 'AND'.
+    332  f000					      AND	$DA
+missle.dasm (333): error: Unknown Mnemonic 'STA'.
+    333  f000					      STA	$EA
+missle.dasm (334): error: Unknown Mnemonic 'SED'.
+    334  f000					      SED
+missle.dasm (335): error: Unknown Mnemonic 'CLC'.
+    335  f000					      CLC
+missle.dasm (336): error: Unknown Mnemonic 'LDA'.
+    336  f000					      LDA	$E9
+missle.dasm (337): error: Unknown Mnemonic 'ADC'.
+    337  f000					      ADC	#$01
+missle.dasm (338): error: Unknown Mnemonic 'CMP'.
+    338  f000					      CMP	#$52
+missle.dasm (339): error: Unknown Mnemonic 'BNE'.
+    339  f000					      BNE	LF24C
+missle.dasm (340): error: Unknown Mnemonic 'LDA'.
+    340  f000					      LDA	#$01
+missle.dasm (341): error: Unknown Mnemonic 'STA'.
+    341  f000				   LF24C      STA	$E9
+missle.dasm (342): error: Unknown Mnemonic 'CLD'.
+    342  f000					      CLD
+missle.dasm (343): error: Unknown Mnemonic 'LDA'.
+    343  f000					      LDA	#$00
+missle.dasm (344): error: Unknown Mnemonic 'STA'.
+    344  f000					      STA	$DF
+missle.dasm (345): error: Unknown Mnemonic 'STA'.
+    345  f000					      STA	$E8
+missle.dasm (346): error: Unknown Mnemonic 'STA'.
+    346  f000					      STA	$E7
+missle.dasm (347): error: Unknown Mnemonic 'STA'.
+    347  f000					      STA	$8E
+missle.dasm (348): error: Unknown Mnemonic 'STA'.
+    348  f000					      STA	$90
+missle.dasm (349): error: Unknown Mnemonic 'BIT'.
+    349  f000				   LF25B      BIT	$FB
+missle.dasm (350): error: Unknown Mnemonic 'BPL'.
+    350  f000					      BPL	LF262
+missle.dasm (351): error: Unknown Mnemonic 'JMP'.
+    351  f000					      JMP	LF470
+missle.dasm (352): error: Unknown Mnemonic 'JSR'.
+    352  f000				   LF262      JSR	LFC89
+missle.dasm (353): error: Unknown Mnemonic 'LDX'.
+    353  f000					      LDX	#$00
+missle.dasm (354): error: Unknown Mnemonic 'LDA'.
+    354  f000					      LDA	$E9
+missle.dasm (355): error: Unknown Mnemonic 'CMP'.
+    355  f000					      CMP	#$35
+missle.dasm (356): error: Unknown Mnemonic 'BCS'.
+    356  f000					      BCS	LF26F
+missle.dasm (357): error: Unknown Mnemonic 'LDX'.
+    357  f000					      LDX	$F5
+missle.dasm (358): error: Unknown Mnemonic 'LDA'.
+    358  f000				   LF26F      LDA	INPT4,X
+missle.dasm (359): error: Unknown Mnemonic 'BPL'.
+    359  f000					      BPL	LF27C
+missle.dasm (360): error: Unknown Mnemonic 'LDA'.
+    360  f000					      LDA	$A2
+missle.dasm (361): error: Unknown Mnemonic 'AND'.
+    361  f000					      AND	#$F7
+missle.dasm (362): error: Unknown Mnemonic 'STA'.
+    362  f000					      STA	$A2
+missle.dasm (363): error: Unknown Mnemonic 'JMP'.
+    363  f000					      JMP	LF2F8
+missle.dasm (364): error: Unknown Mnemonic 'LDA'.
+    364  f000				   LF27C      LDA	$A2
+missle.dasm (365): error: Unknown Mnemonic 'AND'.
+    365  f000					      AND	#$08
+missle.dasm (366): error: Unknown Mnemonic 'BNE'.
+    366  f000					      BNE	LF2F8
+missle.dasm (367): error: Unknown Mnemonic 'LDX'.
+    367  f000					      LDX	#$02
+missle.dasm (368): error: Unknown Mnemonic 'LDA'.
+    368  f000				   LF284      LDA	$B5,X
+missle.dasm (369): error: Unknown Mnemonic 'BPL'.
+    369  f000					      BPL	LF29B
+missle.dasm (370): error: Unknown Mnemonic 'DEX'.
+    370  f000					      DEX
+missle.dasm (371): error: Unknown Mnemonic 'BPL'.
+    371  f000					      BPL	LF284
+missle.dasm (372): error: Unknown Mnemonic 'LDA'.
+    372  f000				   LF28B      LDA	$DF
+missle.dasm (373): error: Unknown Mnemonic 'AND'.
+    373  f000					      AND	#$0F
+missle.dasm (374): error: Unknown Mnemonic 'BNE'.
+    374  f000					      BNE	LF2F8
+missle.dasm (375): error: Unknown Mnemonic 'STA'.
+    375  f000					      STA	$E0
+missle.dasm (376): error: Unknown Mnemonic 'LDA'.
+    376  f000					      LDA	$DF
+missle.dasm (377): error: Unknown Mnemonic 'ORA'.
+    377  f000					      ORA	#$02
+missle.dasm (378): error: Unknown Mnemonic 'STA'.
+    378  f000					      STA	$DF
+missle.dasm (379): error: Unknown Mnemonic 'BNE'.
+    379  f000					      BNE	LF2F8
+missle.dasm (380): error: Unknown Mnemonic 'LDA'.
+    380  f000				   LF29B      LDA	#$08
+missle.dasm (381): error: Unknown Mnemonic 'ORA'.
+    381  f000					      ORA	$A2
+missle.dasm (382): error: Unknown Mnemonic 'STA'.
+    382  f000					      STA	$A2
+missle.dasm (383): error: Unknown Mnemonic 'LDA'.
+    383  f000					      LDA	$DE
+missle.dasm (384): error: Unknown Mnemonic 'BMI'.
+    384  f000					      BMI	LF2F8
+missle.dasm (385): error: Unknown Mnemonic 'LDA'.
+    385  f000					      LDA	$DD
+missle.dasm (386): error: Unknown Mnemonic 'BEQ'.
+    386  f000					      BEQ	LF28B
+missle.dasm (387): error: Unknown Mnemonic 'DEC'.
+    387  f000					      DEC	$DD
+missle.dasm (388): error: Unknown Mnemonic 'BNE'.
+    388  f000					      BNE	LF2B0
+missle.dasm (389): error: Unknown Mnemonic 'JSR'.
+    389  f000					      JSR	LFCA5
+missle.dasm (390): error: Unknown Mnemonic 'LDA'.
+    390  f000				   LF2B0      LDA	$DF
+missle.dasm (391): error: Unknown Mnemonic 'CMP'.
+    391  f000					      CMP	#$20
+missle.dasm (392): error: Unknown Mnemonic 'BCS'.
+    392  f000					      BCS	LF2C0
+missle.dasm (393): error: Unknown Mnemonic 'AND'.
+    393  f000					      AND	#$0F
+missle.dasm (394): error: Unknown Mnemonic 'ORA'.
+    394  f000					      ORA	#$10
+missle.dasm (395): error: Unknown Mnemonic 'STA'.
+    395  f000					      STA	$DF
+missle.dasm (396): error: Unknown Mnemonic 'LDA'.
+    396  f000					      LDA	#$0A
+missle.dasm (397): error: Unknown Mnemonic 'STA'.
+    397  f000					      STA	$E1
+missle.dasm (398): error: Unknown Mnemonic 'LDA'.
+    398  f000				   LF2C0      LDA	#$4F
+missle.dasm (399): error: Unknown Mnemonic 'SEC'.
+    399  f000					      SEC
+missle.dasm (400): error: Unknown Mnemonic 'SBC'.
+    400  f000					      SBC	$90
+missle.dasm (401): error: Unknown Mnemonic 'BCS'.
+    401  f000					      BCS	LF2CD
+missle.dasm (402): error: Unknown Mnemonic 'INC'.
+    402  f000					      INC	$C4,X
+missle.dasm (403): error: Unknown Mnemonic 'EOR'.
+    403  f000					      EOR	#$FF
+missle.dasm (404): error: Unknown Mnemonic 'ADC'.
+    404  f000					      ADC	#$01
+missle.dasm (405): error: Unknown Mnemonic 'STA'.
+    405  f000				   LF2CD      STA	$82
+missle.dasm (406): error: Unknown Mnemonic 'LDA'.
+    406  f000					      LDA	$8E
+missle.dasm (407): error: Unknown Mnemonic 'SEC'.
+    407  f000					      SEC
+missle.dasm (408): error: Unknown Mnemonic 'SBC'.
+    408  f000					      SBC	#$01
+missle.dasm (409): error: Unknown Mnemonic 'CMP'.
+    409  f000					      CMP	$82
+missle.dasm (410): error: Unknown Mnemonic 'BCC'.
+    410  f000					      BCC	LF2E0
+missle.dasm (411): error: Unknown Mnemonic 'STA'.
+    411  f000					      STA	$83
+missle.dasm (412): error: Unknown Mnemonic 'LDA'.
+    412  f000					      LDA	#$C0
+missle.dasm (413): error: Unknown Mnemonic 'STA'.
+    413  f000					      STA	$B5,X
+missle.dasm (414): error: Unknown Mnemonic 'BNE'.
+    414  f000					      BNE	LF2EA
+missle.dasm (415): error: Unknown Mnemonic 'LDY'.
+    415  f000				   LF2E0      LDY	$82
+missle.dasm (416): error: Unknown Mnemonic 'STA'.
+    416  f000					      STA	$82
+missle.dasm (417): error: Unknown Mnemonic 'STY'.
+    417  f000					      STY	$83
+missle.dasm (418): error: Unknown Mnemonic 'LDA'.
+    418  f000					      LDA	#$80
+missle.dasm (419): error: Unknown Mnemonic 'STA'.
+    419  f000					      STA	$B5,X
+missle.dasm (420): error: Unknown Mnemonic 'LDA'.
+    420  f000				   LF2EA      LDA	$83
+missle.dasm (421): error: Unknown Mnemonic 'STA'.
+    421  f000					      STA	$B8,X
+missle.dasm (422): error: Unknown Mnemonic 'STA'.
+    422  f000					      STA	$BB,X
+missle.dasm (423): error: Unknown Mnemonic 'LDA'.
+    423  f000					      LDA	$82
+missle.dasm (424): error: Unknown Mnemonic 'STA'.
+    424  f000					      STA	$BE,X
+missle.dasm (425): error: Unknown Mnemonic 'LDA'.
+    425  f000					      LDA	#$00
+missle.dasm (426): error: Unknown Mnemonic 'STA'.
+    426  f000					      STA	$C1,X
+missle.dasm (427): error: Unknown Mnemonic 'LDA'.
+    427  f000				   LF2F8      LDA	SWCHB
+missle.dasm (428): error: Unknown Mnemonic 'ASL'.
+    428  f000					      ASL	A
+missle.dasm (429): error: Unknown Mnemonic 'LDX'.
+    429  f000					      LDX	$F5
+missle.dasm (430): error: Unknown Mnemonic 'BNE'.
+    430  f000					      BNE	LF301
+missle.dasm (431): error: Unknown Mnemonic 'ASL'.
+    431  f000					      ASL	A
+missle.dasm (432): error: Unknown Mnemonic 'LDY'.
+    432  f000				   LF301      LDY	#$02
+missle.dasm (433): error: Unknown Mnemonic 'BCC'.
+    433  f000					      BCC	LF306
+missle.dasm (434): error: Unknown Mnemonic 'DEY'.
+    434  f000					      DEY
+missle.dasm (435): error: Unknown Mnemonic 'STY'.
+    435  f000				   LF306      STY	$DA
+missle.dasm (436): error: Unknown Mnemonic 'LDX'.
+    436  f000					      LDX	#$02
+missle.dasm (437): error: Unknown Mnemonic 'LDA'.
+    437  f000				   LF30A      LDA	$B5,X
+missle.dasm (438): error: Unknown Mnemonic 'BMI'.
+    438  f000					      BMI	LF311
+missle.dasm (439): error: Unknown Mnemonic 'JMP'.
+    439  f000				   LF30E      JMP	LF394
+missle.dasm (440): error: Unknown Mnemonic 'AND'.
+    440  f000				   LF311      AND	#$20
+missle.dasm (441): error: Unknown Mnemonic 'BNE'.
+    441  f000					      BNE	LF30E
+missle.dasm (442): error: Unknown Mnemonic 'LDA'.
+    442  f000					      LDA	$C1,X
+missle.dasm (443): error: Unknown Mnemonic 'CLC'.
+    443  f000					      CLC
+missle.dasm (444): error: Unknown Mnemonic 'ADC'.
+    444  f000					      ADC	$BE,X
+missle.dasm (445): error: Unknown Mnemonic 'STA'.
+    445  f000					      STA	$C1,X
+missle.dasm (446): error: Unknown Mnemonic 'CMP'.
+    446  f000					      CMP	$BB,X
+missle.dasm (447): error: Unknown Mnemonic 'BCC'.
+    447  f000					      BCC	LF34B
+missle.dasm (448): error: Unknown Mnemonic 'SBC'.
+    448  f000					      SBC	$BB,X
+missle.dasm (449): error: Unknown Mnemonic 'STA'.
+    449  f000					      STA	$C1,X
+missle.dasm (450): error: Unknown Mnemonic 'LDA'.
+    450  f000					      LDA	$B5,X
+missle.dasm (451): error: Unknown Mnemonic 'AND'.
+    451  f000					      AND	#$40
+missle.dasm (452): error: Unknown Mnemonic 'BNE'.
+    452  f000					      BNE	LF334
+missle.dasm (453): error: Unknown Mnemonic 'LDA'.
+    453  f000					      LDA	$C7,X
+missle.dasm (454): error: Unknown Mnemonic 'CLC'.
+    454  f000					      CLC
+missle.dasm (455): error: Unknown Mnemonic 'ADC'.
+    455  f000					      ADC	$DA
+missle.dasm (456): error: Unknown Mnemonic 'STA'.
+    456  f000					      STA	$C7,X
+missle.dasm (457): error: Unknown Mnemonic 'JMP'.
+    457  f000					      JMP	LF34B
+missle.dasm (458): error: Unknown Mnemonic 'LDA'.
+    458  f000				   LF334      LDA	#$4F
+missle.dasm (459): error: Unknown Mnemonic 'CMP'.
+    459  f000					      CMP	$C4,X
+missle.dasm (460): error: Unknown Mnemonic 'BCS'.
+    460  f000					      BCS	LF344
+missle.dasm (461): error: Unknown Mnemonic 'LDA'.
+    461  f000					      LDA	$C4,X
+missle.dasm (462): error: Unknown Mnemonic 'CLC'.
+    462  f000					      CLC
+missle.dasm (463): error: Unknown Mnemonic 'ADC'.
+    463  f000					      ADC	$DA
+missle.dasm (464): error: Unknown Mnemonic 'STA'.
+    464  f000					      STA	$C4,X
+missle.dasm (465): error: Unknown Mnemonic 'JMP'.
+    465  f000					      JMP	LF34B
+missle.dasm (466): error: Unknown Mnemonic 'LDA'.
+    466  f000				   LF344      LDA	$C4,X
+missle.dasm (467): error: Unknown Mnemonic 'SEC'.
+    467  f000					      SEC
+missle.dasm (468): error: Unknown Mnemonic 'SBC'.
+    468  f000					      SBC	$DA
+missle.dasm (469): error: Unknown Mnemonic 'STA'.
+    469  f000					      STA	$C4,X
+missle.dasm (470): error: Unknown Mnemonic 'LDA'.
+    470  f000				   LF34B      LDA	$B5,X
+missle.dasm (471): error: Unknown Mnemonic 'AND'.
+    471  f000					      AND	#$40
+missle.dasm (472): error: Unknown Mnemonic 'BEQ'.
+    472  f000					      BEQ	LF35B
+missle.dasm (473): error: Unknown Mnemonic 'LDA'.
+    473  f000					      LDA	$C7,X
+missle.dasm (474): error: Unknown Mnemonic 'CLC'.
+    474  f000					      CLC
+missle.dasm (475): error: Unknown Mnemonic 'ADC'.
+    475  f000					      ADC	$DA
+missle.dasm (476): error: Unknown Mnemonic 'STA'.
+    476  f000					      STA	$C7,X
+missle.dasm (477): error: Unknown Mnemonic 'JMP'.
+    477  f000					      JMP	LF372
+missle.dasm (478): error: Unknown Mnemonic 'LDA'.
+    478  f000				   LF35B      LDA	#$4F
+missle.dasm (479): error: Unknown Mnemonic 'CMP'.
+    479  f000					      CMP	$C4,X
+missle.dasm (480): error: Unknown Mnemonic 'BCS'.
+    480  f000					      BCS	LF36B
+missle.dasm (481): error: Unknown Mnemonic 'LDA'.
+    481  f000					      LDA	$C4,X
+missle.dasm (482): error: Unknown Mnemonic 'CLC'.
+    482  f000					      CLC
+missle.dasm (483): error: Unknown Mnemonic 'ADC'.
+    483  f000					      ADC	$DA
+missle.dasm (484): error: Unknown Mnemonic 'STA'.
+    484  f000					      STA	$C4,X
+missle.dasm (485): error: Unknown Mnemonic 'JMP'.
+    485  f000					      JMP	LF372
+missle.dasm (486): error: Unknown Mnemonic 'LDA'.
+    486  f000				   LF36B      LDA	$C4,X
+missle.dasm (487): error: Unknown Mnemonic 'SEC'.
+    487  f000					      SEC
+missle.dasm (488): error: Unknown Mnemonic 'SBC'.
+    488  f000					      SBC	$DA
+missle.dasm (489): error: Unknown Mnemonic 'STA'.
+    489  f000					      STA	$C4,X
+missle.dasm (490): error: Unknown Mnemonic 'LDA'.
+    490  f000				   LF372      LDA	$B8,X
+missle.dasm (491): error: Unknown Mnemonic 'SEC'.
+    491  f000					      SEC
+missle.dasm (492): error: Unknown Mnemonic 'SBC'.
+    492  f000					      SBC	$DA
+missle.dasm (493): error: Unknown Mnemonic 'STA'.
+    493  f000					      STA	$B8,X
+missle.dasm (494): error: Unknown Mnemonic 'BCC'.
+    494  f000					      BCC	LF37D
+missle.dasm (495): error: Unknown Mnemonic 'BNE'.
+    495  f000					      BNE	LF394
+missle.dasm (496): error: Unknown Mnemonic 'LDA'.
+    496  f000				   LF37D      LDA	#$20
+missle.dasm (497): error: Unknown Mnemonic 'ORA'.
+    497  f000					      ORA	$B5,X
+missle.dasm (498): error: Unknown Mnemonic 'STA'.
+    498  f000					      STA	$B5,X
+missle.dasm (499): error: Unknown Mnemonic 'LDY'.
+    499  f000					      LDY	#$00
+missle.dasm (500): error: Unknown Mnemonic 'STY'.
+    500  f000					      STY	$9E,X
+missle.dasm (501): error: Unknown Mnemonic 'LDA'.
+    501  f000					      LDA	$C4,X
+missle.dasm (502): error: Unknown Mnemonic 'SEC'.
+    502  f000					      SEC
+missle.dasm (503): error: Unknown Mnemonic 'SBC'.
+    503  f000					      SBC	#$04
+missle.dasm (504): error: Unknown Mnemonic 'STA'.
+    504  f000					      STA	$A6,X
+missle.dasm (505): error: Unknown Mnemonic 'LDA'.
+    505  f000					      LDA	$C7,X
+missle.dasm (506): error: Unknown Mnemonic 'SBC'.
+    506  f000					      SBC	#$04
+missle.dasm (507): error: Unknown Mnemonic 'STA'.
+    507  f000					      STA	$A3,X
+missle.dasm (508): error: Unknown Mnemonic 'DEX'.
+    508  f000				   LF394      DEX
+missle.dasm (509): error: Unknown Mnemonic 'BMI'.
+    509  f000					      BMI	LF39A
+missle.dasm (510): error: Unknown Mnemonic 'JMP'.
+    510  f000					      JMP	LF30A
+missle.dasm (511): error: Unknown Mnemonic 'LDX'.
+    511  f000				   LF39A      LDX	$CA
+missle.dasm (512): error: Unknown Mnemonic 'LDY'.
+    512  f000					      LDY	#$54
+missle.dasm (513): error: Unknown Mnemonic 'LDA'.
+    513  f000					      LDA	$C4,X
+missle.dasm (514): error: Unknown Mnemonic 'STA'.
+    514  f000					      STA	$89
+missle.dasm (515): error: Unknown Mnemonic 'LDA'.
+    515  f000					      LDA	$B5,X
+missle.dasm (516): error: Unknown Mnemonic 'AND'.
+    516  f000					      AND	#$20
+missle.dasm (517): error: Unknown Mnemonic 'BNE'.
+    517  f000					      BNE	LF3AA
+missle.dasm (518): error: Unknown Mnemonic 'LDY'.
+    518  f000					      LDY	$C7,X
+missle.dasm (519): error: Unknown Mnemonic 'STY'.
+    519  f000				   LF3AA      STY	$84
+missle.dasm (520): error: Unknown Mnemonic 'LDA'.
+    520  f000					      LDA	$DE
+missle.dasm (521): error: Unknown Mnemonic 'CMP'.
+    521  f000					      CMP	#$A0
+missle.dasm (522): error: Unknown Mnemonic 'BCS'.
+    522  f000					      BCS	LF3CE
+missle.dasm (523): error: Unknown Mnemonic 'LDY'.
+    523  f000					      LDY	#$97
+missle.dasm (524): error: Unknown Mnemonic 'CPY'.
+    524  f000					      CPY	$90
+missle.dasm (525): error: Unknown Mnemonic 'BCC'.
+    525  f000					      BCC	LF3BE
+missle.dasm (526): error: Unknown Mnemonic 'LDY'.
+    526  f000					      LDY	#$09
+missle.dasm (527): error: Unknown Mnemonic 'CPY'.
+    527  f000					      CPY	$90
+missle.dasm (528): error: Unknown Mnemonic 'BCC'.
+    528  f000					      BCC	LF3C0
+missle.dasm (529): error: Unknown Mnemonic 'STY'.
+    529  f000				   LF3BE      STY	$90
+missle.dasm (530): error: Unknown Mnemonic 'LDY'.
+    530  f000				   LF3C0      LDY	#$0A
+missle.dasm (531): error: Unknown Mnemonic 'CPY'.
+    531  f000					      CPY	$8E
+missle.dasm (532): error: Unknown Mnemonic 'BCS'.
+    532  f000					      BCS	LF3CC
+missle.dasm (533): error: Unknown Mnemonic 'LDY'.
+    533  f000				   LF3C6      LDY	#$53
+missle.dasm (534): error: Unknown Mnemonic 'CPY'.
+    534  f000					      CPY	$8E
+missle.dasm (535): error: Unknown Mnemonic 'BCS'.
+    535  f000					      BCS	LF3CE
+missle.dasm (536): error: Unknown Mnemonic 'STY'.
+    536  f000				   LF3CC      STY	$8E
+missle.dasm (537): error: Unknown Mnemonic 'LDA'.
+    537  f000				   LF3CE      LDA	$90
+missle.dasm (538): error: Unknown Mnemonic 'STA'.
+    538  f000					      STA	$8A
+missle.dasm (539): error: Unknown Mnemonic 'LDA'.
+    539  f000					      LDA	$8E
+missle.dasm (540): error: Unknown Mnemonic 'STA'.
+    540  f000					      STA	$85
+missle.dasm (541): error: Unknown Mnemonic 'LDY'.
+    541  f000					      LDY	$92
+missle.dasm (542): error: Unknown Mnemonic 'LDA'.
+    542  f000					      LDA	$98
+missle.dasm (543): error: Unknown Mnemonic 'AND'.
+    543  f000					      AND	#$02
+missle.dasm (544): error: Unknown Mnemonic 'BEQ'.
+    544  f000					      BEQ	LF3E2
+missle.dasm (545): error: Unknown Mnemonic 'TYA'.
+    545  f000					      TYA
+missle.dasm (546): error: Unknown Mnemonic 'ORA'.
+    546  f000					      ORA	#$10
+missle.dasm (547): error: Unknown Mnemonic 'TAY'.
+    547  f000					      TAY
+missle.dasm (548): error: Unknown Mnemonic 'LDA'.
+    548  f000				   LF3E2      LDA	$91
+missle.dasm (549): error: Unknown Mnemonic 'STY'.
+    549  f000					      STY	$91
+missle.dasm (550): error: Unknown Mnemonic 'STA'.
+    550  f000					      STA	$92
+missle.dasm (551): error: Unknown Mnemonic 'LDA'.
+    551  f000					      LDA	$93
+missle.dasm (552): error: Unknown Mnemonic 'LDY'.
+    552  f000					      LDY	$94
+missle.dasm (553): error: Unknown Mnemonic 'STY'.
+    553  f000					      STY	$93
+missle.dasm (554): error: Unknown Mnemonic 'STA'.
+    554  f000					      STA	$94
+missle.dasm (555): error: Unknown Mnemonic 'LDA'.
+    555  f000					      LDA	$97
+missle.dasm (556): error: Unknown Mnemonic 'LDY'.
+    556  f000					      LDY	$98
+missle.dasm (557): error: Unknown Mnemonic 'STY'.
+    557  f000					      STY	$97
+missle.dasm (558): error: Unknown Mnemonic 'STA'.
+    558  f000					      STA	$98
+missle.dasm (559): error: Unknown Mnemonic 'LDA'.
+    559  f000					      LDA	$95
+missle.dasm (560): error: Unknown Mnemonic 'LDY'.
+    560  f000					      LDY	$96
+missle.dasm (561): error: Unknown Mnemonic 'STY'.
+    561  f000					      STY	$95
+missle.dasm (562): error: Unknown Mnemonic 'STA'.
+    562  f000					      STA	$96
+missle.dasm (563): error: Unknown Mnemonic 'LDA'.
+    563  f000					      LDA	$9A
+missle.dasm (564): error: Unknown Mnemonic 'STA'.
+    564  f000					      STA	$88
+missle.dasm (565): error: Unknown Mnemonic 'LDY'.
+    565  f000					      LDY	$99
+missle.dasm (566): error: Unknown Mnemonic 'STY'.
+    566  f000					      STY	$9A
+missle.dasm (567): error: Unknown Mnemonic 'STA'.
+    567  f000					      STA	$99
+missle.dasm (568): error: Unknown Mnemonic 'LDA'.
+    568  f000					      LDA	$91
+missle.dasm (569): error: Unknown Mnemonic 'CMP'.
+    569  f000					      CMP	#$FF
+missle.dasm (570): error: Unknown Mnemonic 'BNE'.
+    570  f000					      BNE	LF440
+missle.dasm (571): error: Unknown Mnemonic 'LDX'.
+    571  f000					      LDX	#$0A
+missle.dasm (572): error: Unknown Mnemonic 'LDA'.
+    572  f000				   LF412      LDA	$A9,X
+missle.dasm (573): error: Unknown Mnemonic 'CMP'.
+    573  f000					      CMP	#$25
+missle.dasm (574): error: Unknown Mnemonic 'BEQ'.
+    574  f000					      BEQ	LF422
+missle.dasm (575): error: Unknown Mnemonic 'DEX'.
+    575  f000					      DEX
+missle.dasm (576): error: Unknown Mnemonic 'DEX'.
+    576  f000					      DEX
+missle.dasm (577): error: Unknown Mnemonic 'BPL'.
+    577  f000					      BPL	LF412
+missle.dasm (578): error: Unknown Mnemonic 'LDA'.
+    578  f000					      LDA	$D8
+missle.dasm (579): error: Unknown Mnemonic 'AND'.
+    579  f000					      AND	#$07
+missle.dasm (580): error: Unknown Mnemonic 'BPL'.
+    580  f000					      BPL	LF43E
+missle.dasm (581): error: Unknown Mnemonic 'LDA'.
+    581  f000				   LF422      LDA	$D8
+missle.dasm (582): error: Unknown Mnemonic 'AND'.
+    582  f000					      AND	#$07
+missle.dasm (583): error: Unknown Mnemonic 'CMP'.
+    583  f000					      CMP	#$06
+missle.dasm (584): error: Unknown Mnemonic 'BCS'.
+    584  f000					      BCS	LF43E
+missle.dasm (585): error: Unknown Mnemonic 'ASL'.
+    585  f000					      ASL	A
+missle.dasm (586): error: Unknown Mnemonic 'TAX'.
+    586  f000					      TAX
+missle.dasm (587): error: Unknown Mnemonic 'LDA'.
+    587  f000				   LF42C      LDA	$A9,X
+missle.dasm (588): error: Unknown Mnemonic 'CMP'.
+    588  f000					      CMP	#$25
+missle.dasm (589): error: Unknown Mnemonic 'BEQ'.
+    589  f000					      BEQ	LF43C
+missle.dasm (590): error: Unknown Mnemonic 'INX'.
+    590  f000					      INX
+missle.dasm (591): error: Unknown Mnemonic 'INX'.
+    591  f000					      INX
+missle.dasm (592): error: Unknown Mnemonic 'CPX'.
+    592  f000					      CPX	#$0C
+missle.dasm (593): error: Unknown Mnemonic 'BNE'.
+    593  f000					      BNE	LF42C
+missle.dasm (594): error: Unknown Mnemonic 'LDX'.
+    594  f000					      LDX	#$00
+missle.dasm (595): error: Unknown Mnemonic 'BEQ'.
+    595  f000					      BEQ	LF42C
+missle.dasm (596): error: Unknown Mnemonic 'TXA'.
+    596  f000				   LF43C      TXA
+missle.dasm (597): error: Unknown Mnemonic 'LSR'.
+    597  f000					      LSR	A
+missle.dasm (598): error: Unknown Mnemonic 'STA'.
+    598  f000				   LF43E      STA	$95
+missle.dasm (599): error: Unknown Mnemonic 'LDA'.
+    599  f000				   LF440      LDA	$80
+missle.dasm (600): error: Unknown Mnemonic 'AND'.
+    600  f000					      AND	#$01
+missle.dasm (601): error: Unknown Mnemonic 'TAX'.
+    601  f000					      TAX
+missle.dasm (602): error: Unknown Mnemonic 'LDA'.
+    602  f000					      LDA	$9C,X
+missle.dasm (603): error: Unknown Mnemonic 'CLC'.
+    603  f000					      CLC
+missle.dasm (604): error: Unknown Mnemonic 'ADC'.
+    604  f000					      ADC	$9B
+missle.dasm (605): error: Unknown Mnemonic 'STA'.
+    605  f000					      STA	$9C,X
+missle.dasm (606): error: Unknown Mnemonic 'BCC'.
+    606  f000					      BCC	LF470
+missle.dasm (607): error: Unknown Mnemonic 'LDA'.
+    607  f000					      LDA	$93
+missle.dasm (608): error: Unknown Mnemonic 'CMP'.
+    608  f000					      CMP	#$54
+missle.dasm (609): error: Unknown Mnemonic 'BEQ'.
+    609  f000					      BEQ	LF470
+missle.dasm (610): error: Unknown Mnemonic 'LDA'.
+    610  f000					      LDA	$97
+missle.dasm (611): error: Unknown Mnemonic 'AND'.
+    611  f000					      AND	#$02
+missle.dasm (612): error: Unknown Mnemonic 'BEQ'.
+    612  f000					      BEQ	LF46E
+missle.dasm (613): error: Unknown Mnemonic 'BIT'.
+    613  f000					      BIT	$F8
+missle.dasm (614): error: Unknown Mnemonic 'BVC'.
+    614  f000					      BVC	LF46E
+missle.dasm (615): error: Unknown Mnemonic 'LDA'.
+    615  f000					      LDA	$80
+missle.dasm (616): error: Unknown Mnemonic 'AND'.
+    616  f000					      AND	#$01
+missle.dasm (617): error: Unknown Mnemonic 'TAX'.
+    617  f000					      TAX
+missle.dasm (618): error: Unknown Mnemonic 'LDA'.
+    618  f000					      LDA	$F9,X
+missle.dasm (619): error: Unknown Mnemonic 'BEQ'.
+    619  f000					      BEQ	LF46E
+missle.dasm (620): error: Unknown Mnemonic 'INC'.
+    620  f000					      INC	$93
+missle.dasm (621): error: Unknown Mnemonic 'INC'.
+    621  f000					      INC	$93
+missle.dasm (622): error: Unknown Mnemonic 'DEC'.
+    622  f000					      DEC	$F9,X
+missle.dasm (623): error: Unknown Mnemonic 'BIT'.
+    623  f000					      BIT	$93C6
+missle.dasm (624): error: Unknown Mnemonic 'LDX'.
+    624  f000				   LF470      LDX	$CA
+missle.dasm (625): error: Unknown Mnemonic 'DEX'.
+    625  f000					      DEX
+missle.dasm (626): error: Unknown Mnemonic 'BPL'.
+    626  f000					      BPL	LF477
+missle.dasm (627): error: Unknown Mnemonic 'LDX'.
+    627  f000					      LDX	#$02
+missle.dasm (628): error: Unknown Mnemonic 'STX'.
+    628  f000				   LF477      STX	$CA
+missle.dasm (629): error: Unknown Mnemonic 'LDA'.
+    629  f000					      LDA	$80
+missle.dasm (630): error: Unknown Mnemonic 'AND'.
+    630  f000					      AND	#$0F
+missle.dasm (631): error: Unknown Mnemonic 'STA'.
+    631  f000					      STA	$DA
+missle.dasm (632): error: Unknown Mnemonic 'ASL'.
+    632  f000					      ASL	A
+missle.dasm (633): error: Unknown Mnemonic 'ASL'.
+    633  f000					      ASL	A
+missle.dasm (634): error: Unknown Mnemonic 'ASL'.
+    634  f000					      ASL	A
+missle.dasm (635): error: Unknown Mnemonic 'ASL'.
+    635  f000					      ASL	A
+missle.dasm (636): error: Unknown Mnemonic 'ORA'.
+    636  f000					      ORA	$DA
+missle.dasm (637): error: Unknown Mnemonic 'STA'.
+    637  f000					      STA	$D7
+missle.dasm (638): error: Unknown Mnemonic 'LDY'.
+    638  f000					      LDY	#$5D
+missle.dasm (639): error: Unknown Mnemonic 'LDA'.
+    639  f000					      LDA	$B5,X
+missle.dasm (640): error: Unknown Mnemonic 'AND'.
+    640  f000					      AND	#$20
+missle.dasm (641): error: Unknown Mnemonic 'BEQ'.
+    641  f000					      BEQ	LF495
+missle.dasm (642): error: Unknown Mnemonic 'LDA'.
+    642  f000					      LDA	$9E,X
+missle.dasm (643): error: Unknown Mnemonic 'TAX'.
+    643  f000					      TAX
+missle.dasm (644): error: Unknown Mnemonic 'LDY'.
+    644  f000					      LDY	LFF15,X
+missle.dasm (645): error: Unknown Mnemonic 'STY'.
+    645  f000				   LF495      STY	$8B
+missle.dasm (646): error: Unknown Mnemonic 'LDA'.
+    646  f000					      LDA	#$FF
+missle.dasm (647): error: Unknown Mnemonic 'STA'.
+    647  f000					      STA	$8C
+missle.dasm (648): error: Unknown Mnemonic 'LDA'.
+    648  f000					      LDA	$A2
+missle.dasm (649): error: Unknown Mnemonic 'AND'.
+    649  f000					      AND	#$7F
+missle.dasm (650): error: Unknown Mnemonic 'STA'.
+    650  f000					      STA	$A2
+missle.dasm (651): error: Unknown Mnemonic 'LDY'.
+    651  f000					      LDY	#$10
+missle.dasm (652): error: Unknown Mnemonic 'LDA'.
+    652  f000					      LDA	#$F8
+missle.dasm (653): error: Unknown Mnemonic 'CPX'.
+    653  f000					      CPX	#$04
+missle.dasm (654): error: Unknown Mnemonic 'BCC'.
+    654  f000					      BCC	LF4B7
+missle.dasm (655): error: Unknown Mnemonic 'CPX'.
+    655  f000					      CPX	#$0C
+missle.dasm (656): error: Unknown Mnemonic 'BCS'.
+    656  f000					      BCS	LF4B7
+missle.dasm (657): error: Unknown Mnemonic 'LDA'.
+    657  f000					      LDA	$A2
+missle.dasm (658): error: Unknown Mnemonic 'ORA'.
+    658  f000					      ORA	#$80
+missle.dasm (659): error: Unknown Mnemonic 'STA'.
+    659  f000					      STA	$A2
+missle.dasm (660): error: Unknown Mnemonic 'LDA'.
+    660  f000					      LDA	#$F0
+missle.dasm (661): error: Unknown Mnemonic 'LDY'.
+    661  f000					      LDY	#$15
+missle.dasm (662): error: Unknown Mnemonic 'STA'.
+    662  f000				   LF4B7      STA	$A1
+missle.dasm (663): error: Unknown Mnemonic 'STY'.
+    663  f000					      STY	$EE
+missle.dasm (664): error: Unknown Mnemonic 'LDX'.
+    664  f000					      LDX	$CA
+missle.dasm (665): error: Unknown Mnemonic 'LDA'.
+    665  f000					      LDA	$A3,X
+missle.dasm (666): error: Unknown Mnemonic 'BIT'.
+    666  f000					      BIT	$A2
+missle.dasm (667): error: Unknown Mnemonic 'BPL'.
+    667  f000					      BPL	LF4C6
+missle.dasm (668): error: Unknown Mnemonic 'CLC'.
+    668  f000					      CLC
+missle.dasm (669): error: Unknown Mnemonic 'ADC'.
+    669  f000					      ADC	#$FC
+missle.dasm (670): error: Unknown Mnemonic 'STA'.
+    670  f000				   LF4C6      STA	$83
+missle.dasm (671): error: Unknown Mnemonic 'LDA'.
+    671  f000					      LDA	$80
+missle.dasm (672): error: Unknown Mnemonic 'AND'.
+    672  f000					      AND	#$07
+missle.dasm (673): error: Unknown Mnemonic 'BNE'.
+    673  f000					      BNE	LF4E7
+missle.dasm (674): error: Unknown Mnemonic 'LDX'.
+    674  f000					      LDX	#$02
+missle.dasm (675): error: Unknown Mnemonic 'INC'.
+    675  f000				   LF4D0      INC	$9E,X
+missle.dasm (676): error: Unknown Mnemonic 'LDA'.
+    676  f000					      LDA	$9E,X
+missle.dasm (677): error: Unknown Mnemonic 'CMP'.
+    677  f000					      CMP	#$10
+missle.dasm (678): error: Unknown Mnemonic 'BNE'.
+    678  f000					      BNE	LF4E4
+missle.dasm (679): error: Unknown Mnemonic 'LDA'.
+    679  f000					      LDA	#$00
+missle.dasm (680): error: Unknown Mnemonic 'STA'.
+    680  f000					      STA	$B5,X
+missle.dasm (681): error: Unknown Mnemonic 'LDA'.
+    681  f000					      LDA	#$4F
+missle.dasm (682): error: Unknown Mnemonic 'STA'.
+    682  f000					      STA	$C4,X
+missle.dasm (683): error: Unknown Mnemonic 'LDA'.
+    683  f000					      LDA	#$01
+missle.dasm (684): error: Unknown Mnemonic 'STA'.
+    684  f000					      STA	$C7,X
+missle.dasm (685): error: Unknown Mnemonic 'DEX'.
+    685  f000				   LF4E4      DEX
+missle.dasm (686): error: Unknown Mnemonic 'BPL'.
+    686  f000					      BPL	LF4D0
+missle.dasm (687): error: Unknown Mnemonic 'LDX'.
+    687  f000				   LF4E7      LDX	#$0A
+missle.dasm (688): error: Unknown Mnemonic 'LDA'.
+    688  f000				   LF4E9      LDA	$A9,X
+missle.dasm (689): error: Unknown Mnemonic 'CMP'.
+    689  f000					      CMP	#$25
+missle.dasm (690): error: Unknown Mnemonic 'BEQ'.
+    690  f000					      BEQ	LF504
+missle.dasm (691): error: Unknown Mnemonic 'CMP'.
+    691  f000					      CMP	#$5B
+missle.dasm (692): error: Unknown Mnemonic 'BEQ'.
+    692  f000					      BEQ	LF504
+missle.dasm (693): error: Unknown Mnemonic 'CMP'.
+    693  f000					      CMP	#$F1
+missle.dasm (694): error: Unknown Mnemonic 'BEQ'.
+    694  f000					      BEQ	LF504
+missle.dasm (695): error: Unknown Mnemonic 'LDA'.
+    695  f000					      LDA	$80
+missle.dasm (696): error: Unknown Mnemonic 'AND'.
+    696  f000					      AND	#$0F
+missle.dasm (697): error: Unknown Mnemonic 'BNE'.
+    697  f000					      BNE	LF504
+missle.dasm (698): error: Unknown Mnemonic 'LDA'.
+    698  f000					      LDA	$A9,X
+missle.dasm (699): error: Unknown Mnemonic 'CLC'.
+    699  f000					      CLC
+missle.dasm (700): error: Unknown Mnemonic 'ADC'.
+    700  f000					      ADC	#$09
+missle.dasm (701): error: Unknown Mnemonic 'STA'.
+    701  f000					      STA	$A9,X
+missle.dasm (702): error: Unknown Mnemonic 'DEX'.
+    702  f000				   LF504      DEX
+missle.dasm (703): error: Unknown Mnemonic 'DEX'.
+    703  f000					      DEX
+missle.dasm (704): error: Unknown Mnemonic 'BPL'.
+    704  f000					      BPL	LF4E9
+missle.dasm (705): error: Unknown Mnemonic 'LDA'.
+    705  f000					      LDA	#$38
+missle.dasm (706): error: Unknown Mnemonic 'STA'.
+    706  f000					      STA	$86
+missle.dasm (707): error: Unknown Mnemonic 'LDA'.
+    707  f000					      LDA	#$40
+missle.dasm (708): error: Unknown Mnemonic 'STA'.
+    708  f000					      STA	$87
+missle.dasm (709): error: Unknown Mnemonic 'LDA'.
+    709  f000					      LDA	$A1
+missle.dasm (710): error: Unknown Mnemonic 'STA'.
+    710  f000					      STA	$DA
+missle.dasm (711): error: Unknown Mnemonic 'LDA'.
+    711  f000					      LDA	#$00
+missle.dasm (712): error: Unknown Mnemonic 'STA'.
+    712  f000					      STA	$A1
+missle.dasm (713): error: Unknown Mnemonic 'JSR'.
+    713  f000					      JSR	LF000
+missle.dasm (714): error: Unknown Mnemonic 'LDA'.
+    714  f000					      LDA	$DA
+missle.dasm (715): error: Unknown Mnemonic 'STA'.
+    715  f000					      STA	$A1
+missle.dasm (716): error: Unknown Mnemonic 'LDX'.
+    716  f000					      LDX	#$00
+missle.dasm (717): error: Unknown Mnemonic 'LDA'.
+    717  f000					      LDA	$DF
+missle.dasm (718): error: Unknown Mnemonic 'AND'.
+    718  f000					      AND	#$0F
+missle.dasm (719): error: Unknown Mnemonic 'ASL'.
+    719  f000					      ASL	A
+missle.dasm (720): error: Unknown Mnemonic 'TAY'.
+    720  f000					      TAY
+missle.dasm (721): error: Unknown Mnemonic 'LDA'.
+    721  f000					      LDA	LF531,Y
+missle.dasm (722): error: Unknown Mnemonic 'PHA'.
+    722  f000					      PHA
+missle.dasm (723): error: Unknown Mnemonic 'LDA'.
+    723  f000					      LDA	LF530,Y
+missle.dasm (724): error: Unknown Mnemonic 'PHA'.
+    724  f000					      PHA
+missle.dasm (725): error: Unknown Mnemonic 'RTS'.
+    725  f000					      RTS
+    726  f000
+    727  f000		       ea	   LF530      .byte.b	$EA
+    728  f001		       f5 d4 f5 8f*LF531      .byte.b	$F5,$D4,$F5,$8F,$F5,$77,$F5,$5F,$F5,$65,$F5,$3F,$F5,$AE,$F5,$A5
+    729  f011		       e0 29 03 d0*	      .byte.b	$E0,$29,$03,$D0,$06,$A5,$D8,$29,$07,$85,$E1,$A0,$0C,$A2,$08,$A5
+    730  f021		       e1 c6 e0 d0*	      .byte.b	$E1,$C6,$E0,$D0,$56,$A9,$01,$85,$DF,$A9,$04,$85,$E0,$D0,$4C,$C6
+    731  f031		       e0 a5 e0 90*	      .byte.b	$E0,$A5,$E0,$90,$0A,$A5,$80,$29,$0F,$C9,$03,$B0,$3E,$49,$07,$0A
+    732  f041		       aa a0 08 a9*	      .byte.b	$AA,$A0,$08,$A9,$18,$D0,$34,$A5,$80,$A6,$E0,$29,$1F,$D0,$06,$E0
+    733  f051		       0e f0 02 e6*	      .byte.b	$0E,$F0,$02,$E6,$E0,$A5,$80,$29,$03,$09,$08,$A0,$05,$D0,$5B,$A4
+    734  f061		       e0 b9 36 fe*	      .byte.b	$E0,$B9,$36,$FE,$A2,$08,$C8,$84,$E0,$C0,$08,$F0,$04,$A0,$05,$D0
+    735  f071		       0a a5 df 29*	      .byte.b	$0A,$A5,$DF,$29,$F0,$85,$DF,$A2,$00,$86,$E0,$4C,$EB,$F5,$A0,$08
+    736  f081		       84 15 a5 80*	      .byte.b	$84,$15,$A5,$80,$29,$0F,$D0,$10,$E6,$E0,$A5,$E0,$C9,$10,$D0,$08
+    737  f091		       a9 30 85 df*	      .byte.b	$A9,$30,$85,$DF,$A2,$50,$86,$E1,$A6,$E0,$86,$19,$8A,$85,$17,$49
+    738  f0a1		       ff 4c 62 f6*	      .byte.b	$FF,$4C,$62,$F6,$A5,$DE,$C9,$A0,$B0,$10,$A6,$E0,$8A,$E8,$E0,$14
+    739  f0b1		       d0 02 a2 04*	      .byte.b	$D0,$02,$A2,$04,$86,$E0,$A0,$0C,$A2,$08,$86,$19,$84,$15,$85,$17
+    740  f0c1		       a2 00 a5 df*	      .byte.b	$A2,$00,$A5,$DF,$29,$F0,$C9,$10,$F0,$27,$C9,$20,$F0,$4D,$C9,$30
+    741  f0d1		       90 5f c6 e1*	      .byte.b	$90,$5F,$C6,$E1,$F0,$2D,$A5,$E1,$29,$70,$4A,$4A,$4A,$4A,$A8,$BE
+    742  f0e1		       1d f6 a0 08*	      .byte.b	$1D,$F6,$A0,$08,$A5,$E1,$29,$0F,$09,$10,$D0,$45,$02,$04,$06,$08
+    743  f0f1		       0e a0 08 a2*	      .byte.b	$0E,$A0,$08,$A2,$06,$A5,$80,$29,$03,$D0,$04,$C6,$E1,$F0,$04,$A5
+    744  f101		       e1 d0 2e a5*	      .byte.b	$E1,$D0,$2E,$A5,$DF,$29,$0F,$85,$DF,$24,$FB,$10,$0C,$A9,$C3,$85
+    745  f111		       db a9 00 85*	      .byte.b	$DB,$A9,$00,$85,$FB,$85,$E7,$85,$E8,$10,$16,$A4,$E1,$BE,$3E,$FE
+    746  f121		       a5 80 29 07*	      .byte.b	$A5,$80,$29,$07,$D0,$07,$C8,$84,$E1,$C0,$10,$F0,$D6,$A9,$1F,$A0
+    747  f131		       08 86 1a 84*	      .byte.b	$08,$86,$1A,$84,$16,$85,$18,$A0,$00,$A2,$0F,$AD,$82,$02,$29,$08
+    748  f141		       f0 02 a2 ff*	      .byte.b	$F0,$02,$A2,$FF,$24,$DB,$10,$06,$8A,$29,$F7,$AA,$A0,$FF,$86,$86
+    749  f151		       98 25 e8 85*	      .byte.b	$98,$25,$E8,$85,$DA,$A2,$00,$A0,$00,$A5,$E7,$C9,$FF,$F0,$0B,$29
+    750  f161		       0e 4a 85 82*	      .byte.b	$0E,$4A,$85,$82,$0A,$0A,$18,$65,$82,$A8,$B9,$8A,$FE,$45,$DA,$25
+    751  f171		       86 95 e2 e8*	      .byte.b	$86,$95,$E2,$E8,$C8,$E0,$05,$D0,$F1,$24,$FB,$30,$13,$A4,$DF,$C0
+    752  f181		       30 90 0d a5*	      .byte.b	$30,$90,$0D,$A5,$E1,$25,$86,$C0,$40,$90,$03,$85,$E2,$2C,$85,$E5
+    753  f191		       a6 f5 a5 db*	      .byte.b	$A6,$F5,$A5,$DB,$29,$04,$F0,$10,$A5,$E9,$95,$F3,$A0,$00,$94,$F1
+    754  f1a1		       c8 c9 18 90*	      .byte.b	$C8,$C9,$18,$90,$01,$C8,$94,$EF,$B5,$EF,$A2,$08,$20,$6C,$FD,$A6
+    755  f1b1		       f5 b5 f1 a2*	      .byte.b	$F5,$B5,$F1,$A2,$04,$20,$6C,$FD,$A6,$F5,$B5,$F3,$A2,$00,$20,$6C
+    756  f1c1		       fd a0 5d b5*	      .byte.b	$FD,$A0,$5D,$B5,$CB,$C9,$88,$D0,$08,$94,$CB,$E8,$E8,$E0,$0A,$D0
+    757  f1d1		       f2 a5 db 29*	      .byte.b	$F2,$A5,$DB,$29,$04,$F0,$06,$84,$D1,$84,$CF,$84,$D3,$A5,$D7,$25
+    758  f1e1		       86 85 d7 24*	      .byte.b	$86,$85,$D7,$24,$FB,$10,$0C,$A5,$DF,$C9,$30,$D0,$06,$A5,$E1,$25
+    759  f1f1		       86 85 e4 a5*	      .byte.b	$86,$85,$E4,$A5,$E6,$45,$DA,$25,$86,$85,$06,$85,$07,$A9,$03,$85
+    760  f201		       05 85 25 85*	      .byte.b	$05,$85,$25,$85,$26,$A5,$E4,$85,$09,$A5,$8E,$18,$69,$28,$85,$8E
+    761  f211		       85 8d a5 90*	      .byte.b	$85,$8D,$A5,$90,$69,$28,$85,$90,$85,$8F,$AD,$84,$02,$D0,$FB,$85
+    762  f221		       02 85 01 85*	      .byte.b	$02,$85,$01,$85,$81,$85,$22,$85,$23,$85,$24,$A9,$06,$85,$DA,$A4
+    763  f231		       da b1 cb 85*	      .byte.b	$DA,$B1,$CB,$85,$1B,$85,$02,$B1,$CD,$85,$1C,$B1,$CF,$85,$1B,$B1
+    764  f241		       d1 85 82 b1*	      .byte.b	$D1,$85,$82,$B1,$D3,$AA,$B1,$D5,$A8,$A5,$82,$85,$1C,$86,$1B,$84
+    765  f251		       1c 84 1b c6*	      .byte.b	$1C,$84,$1B,$C6,$DA,$10,$D8,$85,$02,$A0,$00,$84,$25,$84,$26,$84
+    766  f261		       1b 84 1c a0*	      .byte.b	$1B,$84,$1C,$A0,$21,$84,$0A,$A5,$80,$29,$0F,$85,$08,$AD,$80,$02
+    767  f271		       a4 e9 c0 35*	      .byte.b	$A4,$E9,$C0,$35,$B0,$04,$A4,$F5,$D0,$04,$4A,$4A,$4A,$4A,$A8,$29
+    768  f281		       03 85 ce 98*	      .byte.b	$03,$85,$CE,$98,$4A,$4A,$29,$03,$85,$CC,$85,$02,$A5,$E3,$85,$06
+    769  f291		       a5 e4 85 09*	      .byte.b	$A5,$E4,$85,$09,$A5,$D7,$85,$07,$A4,$E6,$A5,$97,$29,$02,$D0,$09
+    770  f2a1		       a8 a5 80 29*	      .byte.b	$A8,$A5,$80,$29,$08,$D0,$02,$A0,$0F,$98,$25,$86,$85,$D7,$A6,$CA
+    771  f2b1		       b5 a6 85 87*	      .byte.b	$B5,$A6,$85,$87,$A5,$91,$85,$04,$A5,$EE,$85,$05,$A2,$01,$A9,$36
+    772  f2c1		       8d 95 02 20*	      .byte.b	$8D,$95,$02,$20,$02,$F0,$A5,$97,$0A,$85,$D0,$A0,$34,$C4,$E9,$90
+    773  f2d1		       03 a5 f5 4a*	      .byte.b	$03,$A5,$F5,$4A,$66,$D0,$A5,$DE,$C9,$A0,$66,$D0,$AD,$84,$02,$D0
+    774  f2e1		       fb 85 21 a2*	      .byte.b	$FB,$85,$21,$A2,$53,$D0,$24,$50,$04,$4A,$4A,$10,$03,$0A,$2A,$2A
+    775  f2f1		       a4 cc 29 03*	      .byte.b	$A4,$CC,$29,$03,$85,$CC,$59,$0B,$FE,$F0,$0C,$49,$03,$D0,$48,$C6
+    776  f301		       8e d0 44 c6*	      .byte.b	$8E,$D0,$44,$C6,$90,$D0,$40,$E6,$8E,$D0,$3C,$85,$02,$85,$2A,$E4
+    777  f311		       93 d0 08 a9*	      .byte.b	$93,$D0,$08,$A9,$02,$A4,$D7,$84,$06,$B0,$08,$A9,$01,$24,$D0,$D0
+    778  f321		       02 69 00 85*	      .byte.b	$02,$69,$00,$85,$1D,$24,$D0,$30,$1E,$8A,$4A,$AD,$80,$02,$90,$B7
+    779  f331		       70 04 4a 4a*	      .byte.b	$70,$04,$4A,$4A,$4A,$4A,$A4,$CE,$29,$03,$85,$CE,$59,$0B,$FE,$F0
+    780  f341		       c2 49 03 d0*	      .byte.b	$C2,$49,$03,$D0,$02,$E6,$90,$85,$02,$8A,$A2,$1F,$9A,$AA,$E4,$85
+    781  f351		       08 38 e5 83*	      .byte.b	$08,$38,$E5,$83,$24,$A2,$10,$01,$4A,$A8,$29,$F8,$F0,$03,$A9,$00
+    782  f361		       2c b1 8b 85*	      .byte.b	$2C,$B1,$8B,$85,$1C,$A5,$81,$18,$65,$95,$85,$81,$A0,$00,$90,$02
+    783  f371		       a4 97 84 22*	      .byte.b	$A4,$97,$84,$22,$E4,$84,$08,$CA,$D0,$91,$85,$02,$A9,$02,$A6,$84
+    784  f381		       ca d0 01 24*	      .byte.b	$CA,$D0,$01,$24,$4A,$EA,$85,$1E,$4A,$85,$1D,$85,$1D,$85,$10,$A5
+    785  f391		       e5 85 08 a5*	      .byte.b	$E5,$85,$08,$A5,$E2,$85,$06,$85,$07,$85,$07,$A0,$08,$A9,$30,$A2
+    786  f3a1		       84 85 11 84*	      .byte.b	$84,$85,$11,$84,$1E,$85,$0D,$A9,$03
+    787  f3aa		       85 04 85 05*LF8DA      .byte.b	$85,$04,$85,$05,$85,$02,$B9,$7F,$FF,$85,$0F,$B1,$AD,$AA,$B1,$A9
+    788  f3ba		       85 1b b1 ab*	      .byte.b	$85,$1B,$B1,$AB,$EA,$85,$1B,$A5,$10,$86,$1B,$B1,$B3,$AA,$B1,$AF
+    789  f3ca		       85 1c b1 b1*	      .byte.b	$85,$1C,$B1,$B1,$85,$1C,$EA,$86,$1C,$88,$10,$D8,$85,$02,$A9,$05
+    790  f3da		       85 05 a5 e5*	      .byte.b	$85,$05,$A5,$E5,$85,$09,$85,$09,$C8,$84,$0F,$84,$0D,$84,$1B,$A4
+    791  f3ea		       dd b9 00 ff*	      .byte.b	$DD,$B9,$00,$FF,$85,$8B,$A9,$FF,$85,$8C,$A0,$03,$85,$11,$A5,$E4
+    792  f3fa		       85 07 85 08*	      .byte.b	$85,$07,$85,$08,$A5,$DB,$29,$03,$AA,$85,$02,$B1,$8B,$85,$1C,$BD
+    793  f40a		       61 fe 85 0d*	      .byte.b	$61,$FE,$85,$0D,$4A,$4A,$4A,$4A,$88,$85,$0D,$10,$EC,$85,$02,$A5
+    794  f41a		       e5 85 09 a9*	      .byte.b	$E5,$85,$09,$A9,$1A,$8D,$96,$02,$C8,$84,$1C,$A2,$FF,$9A,$A2,$03
+    795  f42a		       ca a5 f8 4a*	      .byte.b	$CA,$A5,$F8,$4A,$B5,$8E,$B0,$0B,$75,$8D,$6A,$24,$FB,$70,$03,$75
+    796  f43a		       8e 6a 38 e9*	      .byte.b	$8E,$6A,$38,$E9,$28,$B0,$01,$8A,$95,$8E,$CA,$10,$E3,$86,$D0,$86
+    797  f44a		       ce 86 cc a5*	      .byte.b	$CE,$86,$CC,$A5,$91,$C9,$FF,$D0,$15,$24,$DE,$30,$11,$20,$83,$FA
+    798  f45a		       90 09 a5 94*	      .byte.b	$90,$09,$A5,$94,$C9,$54,$D0,$03,$20,$EA,$FC,$4C,$73,$FA,$A4,$93
+    799  f46a		       d0 06 20 af*	      .byte.b	$D0,$06,$20,$AF,$FB,$4C,$73,$FA,$29,$07,$AA,$BD,$D5,$FD,$85,$88
+    800  f47a		       bc dd fd b9*	      .byte.b	$BC,$DD,$FD,$B9,$05,$FE,$85,$8B,$A9,$FE,$85,$8C,$A9,$53,$38,$E5
+    801  f48a		       93 85 81 a5*	      .byte.b	$93,$85,$81,$A5,$95,$85,$DA,$20,$6F,$FC,$A4,$88,$A5,$99,$18,$71
+    802  f49a		       8b a4 93 84*	      .byte.b	$8B,$A4,$93,$84,$83,$A4,$97,$C0,$F0,$90,$06,$18,$65,$87,$4C,$DE
+    803  f4aa		       f9 38 e5 87*	      .byte.b	$F9,$38,$E5,$87,$85,$82,$A6,$CA,$B5,$B5,$29,$20,$F0,$37,$B4,$C7
+    804  f4ba		       b5 c4 aa 20*	      .byte.b	$B5,$C4,$AA,$20,$44,$FC,$85,$82,$A6,$CA,$B4,$9E,$A5,$97,$29,$02
+    805  f4ca		       f0 1c 24 f8*	      .byte.b	$F0,$1C,$24,$F8,$50,$18,$B9,$C6,$FD,$C5,$82,$90,$18,$A5,$82,$C9
+    806  f4da		       03 90 15 a5*	      .byte.b	$03,$90,$15,$A5,$80,$29,$01,$AA,$A9,$02,$95,$F9,$D0,$07,$B9,$C6
+    807  f4ea		       fd c5 82 b0*	      .byte.b	$FD,$C5,$82,$B0,$03,$4C,$6C,$FA,$A0,$00,$A5,$97,$29,$02,$F0,$01
+    808  f4fa		       c8 a9 25 20*	      .byte.b	$C8,$A9,$25,$20,$C1,$FC,$A5,$DF,$C9,$30,$B0,$0A,$29,$0F,$09,$20
+    809  f50a		       85 df a9 00*	      .byte.b	$85,$DF,$A9,$00,$85,$E1,$A5,$8B,$18,$69,$0D,$85,$8B,$A4,$88,$B1
+    810  f51a		       8b 85 91 c9*	      .byte.b	$8B,$85,$91,$C9,$FF,$D0,$06,$A9,$55,$85,$93,$D0,$1C,$A5,$8B,$18
+    811  f52a		       69 0d 85 8b*	      .byte.b	$69,$0D,$85,$8B,$A5,$99,$18,$71,$8B,$85,$99,$A5,$8B,$38,$E9,$1A
+    812  f53a		       85 8b c6 88*	      .byte.b	$85,$8B,$C6,$88,$30,$03,$4C,$C4,$F9,$AD,$84,$02,$D0,$FB,$A2,$02
+    813  f54a		       85 02 86 01*	      .byte.b	$85,$02,$86,$01,$85,$09,$4C,$4E,$F0,$A0
+missle.dasm (814): error: Unknown Mnemonic 'BRK'.
+    814  f54a				   LFA84      BRK
+missle.dasm (815): error: Unknown Mnemonic 'LDA'.
+    815  f54a					      LDA	$97
+missle.dasm (816): error: Unknown Mnemonic 'AND'.
+    816  f54a					      AND	#$02
+missle.dasm (817): error: Unknown Mnemonic 'BEQ'.
+    817  f54a					      BEQ	LFA97
+missle.dasm (818): error: Unknown Mnemonic 'LDA'.
+    818  f54a					      LDA	$98
+missle.dasm (819): error: Unknown Mnemonic 'AND'.
+    819  f54a					      AND	#$02
+missle.dasm (820): error: Unknown Mnemonic 'BNE'.
+    820  f54a					      BNE	LFA97
+missle.dasm (821): error: Unknown Mnemonic 'LDA'.
+    821  f54a					      LDA	$DF
+missle.dasm (822): error: Unknown Mnemonic 'AND'.
+    822  f54a					      AND	#$F0
+missle.dasm (823): error: Unknown Mnemonic 'STA'.
+    823  f54a					      STA	$DF
+missle.dasm (824): error: Unknown Mnemonic 'STY'.
+    824  f54a				   LFA97      STY	$97
+missle.dasm (825): error: Unknown Mnemonic 'BIT'.
+    825  f54a					      BIT	$DE
+missle.dasm (826): error: Unknown Mnemonic 'BMI'.
+    826  f54a					      BMI	LFAA5
+missle.dasm (827): error: Unknown Mnemonic 'LDA'.
+    827  f54a					      LDA	$DE
+missle.dasm (828): error: Unknown Mnemonic 'BNE'.
+    828  f54a					      BNE	LFAC7
+missle.dasm (829): error: Unknown Mnemonic 'LDA'.
+    829  f54a					      LDA	$EB
+missle.dasm (830): error: Unknown Mnemonic 'BNE'.
+    830  f54a					      BNE	LFAAB
+missle.dasm (831): error: Unknown Mnemonic 'LDA'.
+    831  f54a				   LFAA5      LDA	#$54
+missle.dasm (832): error: Unknown Mnemonic 'STA'.
+    832  f54a					      STA	$93
+missle.dasm (833): error: Unknown Mnemonic 'SEC'.
+    833  f54a					      SEC
+missle.dasm (834): error: Unknown Mnemonic 'RTS'.
+    834  f54a					      RTS
+    835  f554
+missle.dasm (836): error: Unknown Mnemonic 'LDY'.
+    836  f554				   LFAAB      LDY	#$02
+missle.dasm (837): error: Unknown Mnemonic 'STY'.
+    837  f554					      STY	$E0
+missle.dasm (838): error: Unknown Mnemonic 'LDY'.
+    838  f554					      LDY	#$FF
+missle.dasm (839): error: Unknown Mnemonic 'STY'.
+    839  f554					      STY	$97
+missle.dasm (840): error: Unknown Mnemonic 'LDA'.
+    840  f554					      LDA	$80
+missle.dasm (841): error: Unknown Mnemonic 'AND'.
+    841  f554					      AND	#$01
+missle.dasm (842): error: Unknown Mnemonic 'TAX'.
+    842  f554					      TAX
+missle.dasm (843): error: Unknown Mnemonic 'INY'.
+    843  f554					      INY
+missle.dasm (844): error: Unknown Mnemonic 'STY'.
+    844  f554					      STY	$F9,X
+missle.dasm (845): error: Unknown Mnemonic 'DEC'.
+    845  f554					      DEC	$EB
+missle.dasm (846): error: Unknown Mnemonic 'LDA'.
+    846  f554					      LDA	$DF
+missle.dasm (847): error: Unknown Mnemonic 'AND'.
+    847  f554					      AND	#$F0
+missle.dasm (848): error: Unknown Mnemonic 'ORA'.
+    848  f554					      ORA	#$03
+missle.dasm (849): error: Unknown Mnemonic 'STA'.
+    849  f554					      STA	$DF
+missle.dasm (850): error: Unknown Mnemonic 'BNE'.
+    850  f554					      BNE	LFAD1
+missle.dasm (851): error: Unknown Mnemonic 'LDA'.
+    851  f554				   LFAC7      LDA	$D8
+missle.dasm (852): error: Unknown Mnemonic 'AND'.
+    852  f554					      AND	#$18
+missle.dasm (853): error: Unknown Mnemonic 'BNE'.
+    853  f554					      BNE	LFAD1
+missle.dasm (854): error: Unknown Mnemonic 'LDA'.
+    854  f554					      LDA	$EB
+missle.dasm (855): error: Unknown Mnemonic 'BNE'.
+    855  f554					      BNE	LFAAB
+missle.dasm (856): error: Unknown Mnemonic 'LDY'.
+    856  f554				   LFAD1      LDY	$95
+missle.dasm (857): error: Unknown Mnemonic 'LDA'.
+    857  f554					      LDA	LFDEC,Y
+missle.dasm (858): error: Unknown Mnemonic 'STA'.
+    858  f554					      STA	$82
+missle.dasm (859): error: Unknown Mnemonic 'BIT'.
+    859  f554					      BIT	$97
+missle.dasm (860): error: Unknown Mnemonic 'BMI'.
+    860  f554					      BMI	LFAEC
+missle.dasm (861): error: Unknown Mnemonic 'LDA'.
+    861  f554					      LDA	$DE
+missle.dasm (862): error: Unknown Mnemonic 'CMP'.
+    862  f554					      CMP	#$04
+missle.dasm (863): error: Unknown Mnemonic 'BCS'.
+    863  f554					      BCS	LFAE8
+missle.dasm (864): error: Unknown Mnemonic 'TAY'.
+    864  f554					      TAY
+missle.dasm (865): error: Unknown Mnemonic 'LDA'.
+    865  f554					      LDA	LFDFC,Y
+missle.dasm (866): error: Unknown Mnemonic 'BPL'.
+    866  f554					      BPL	LFAFB
+missle.dasm (867): error: Unknown Mnemonic 'CPY'.
+    867  f554				   LFAE8      CPY	#$06
+missle.dasm (868): error: Unknown Mnemonic 'BCC'.
+    868  f554					      BCC	LFAF0
+missle.dasm (869): error: Unknown Mnemonic 'LDA'.
+    869  f554				   LFAEC      LDA	#$00
+missle.dasm (870): error: Unknown Mnemonic 'BEQ'.
+    870  f554					      BEQ	LFAFB
+missle.dasm (871): error: Unknown Mnemonic 'LDA'.
+    871  f554				   LFAF0      LDA	$D8
+missle.dasm (872): error: Unknown Mnemonic 'LSR'.
+    872  f554					      LSR	A
+missle.dasm (873): error: Unknown Mnemonic 'LSR'.
+    873  f554					      LSR	A
+missle.dasm (874): error: Unknown Mnemonic 'LSR'.
+    874  f554					      LSR	A
+missle.dasm (875): error: Unknown Mnemonic 'AND'.
+    875  f554					      AND	#$07
+missle.dasm (876): error: Unknown Mnemonic 'TAY'.
+    876  f554					      TAY
+missle.dasm (877): error: Unknown Mnemonic 'LDA'.
+    877  f554					      LDA	LFDF4,Y
+missle.dasm (878): error: Unknown Mnemonic 'TAY'.
+    878  f554				   LFAFB      TAY
+missle.dasm (879): error: Unknown Mnemonic 'STA'.
+    879  f554					      STA	$91
+missle.dasm (880): error: Unknown Mnemonic 'LDA'.
+    880  f554					      LDA	LFDE4,Y
+missle.dasm (881): error: Unknown Mnemonic 'STA'.
+    881  f554					      STA	$83
+missle.dasm (882): error: Unknown Mnemonic 'LDA'.
+    882  f554					      LDA	$D8
+missle.dasm (883): error: Unknown Mnemonic 'CMP'.
+    883  f554					      CMP	#$A0
+missle.dasm (884): error: Unknown Mnemonic 'BCC'.
+    884  f554					      BCC	LFB0A
+missle.dasm (885): error: Unknown Mnemonic 'LSR'.
+    885  f554					      LSR	A
+missle.dasm (886): error: Unknown Mnemonic 'CLC'.
+    886  f554				   LFB0A      CLC
+missle.dasm (887): error: Unknown Mnemonic 'ADC'.
+    887  f554					      ADC	$83
+missle.dasm (888): error: Unknown Mnemonic 'CMP'.
+    888  f554					      CMP	#$A0
+missle.dasm (889): error: Unknown Mnemonic 'BCC'.
+    889  f554					      BCC	LFB12
+missle.dasm (890): error: Unknown Mnemonic 'LSR'.
+    890  f554					      LSR	A
+missle.dasm (891): error: Unknown Mnemonic 'SEC'.
+    891  f554				   LFB12      SEC
+missle.dasm (892): error: Unknown Mnemonic 'SBC'.
+    892  f554					      SBC	$83
+missle.dasm (893): error: Unknown Mnemonic 'STA'.
+    893  f554					      STA	$99
+missle.dasm (894): error: Unknown Mnemonic 'CMP'.
+    894  f554					      CMP	$82
+missle.dasm (895): error: Unknown Mnemonic 'BCS'.
+    895  f554					      BCS	LFB4B
+missle.dasm (896): error: Unknown Mnemonic 'ADC'.
+    896  f554					      ADC	$83
+missle.dasm (897): error: Unknown Mnemonic 'CMP'.
+    897  f554					      CMP	$82
+missle.dasm (898): error: Unknown Mnemonic 'BCC'.
+    898  f554					      BCC	LFB47
+missle.dasm (899): error: Unknown Mnemonic 'LDA'.
+    899  f554					      LDA	$82
+missle.dasm (900): error: Unknown Mnemonic 'CLC'.
+    900  f554					      CLC
+missle.dasm (901): error: Unknown Mnemonic 'ADC'.
+    901  f554					      ADC	$83
+missle.dasm (902): error: Unknown Mnemonic 'CMP'.
+    902  f554					      CMP	#$A0
+missle.dasm (903): error: Unknown Mnemonic 'BCS'.
+    903  f554					      BCS	LFB34
+missle.dasm (904): error: Unknown Mnemonic 'LDA'.
+    904  f554					      LDA	$83
+missle.dasm (905): error: Unknown Mnemonic 'LSR'.
+    905  f554					      LSR	A
+missle.dasm (906): error: Unknown Mnemonic 'CLC'.
+    906  f554					      CLC
+missle.dasm (907): error: Unknown Mnemonic 'ADC'.
+    907  f554					      ADC	$99
+missle.dasm (908): error: Unknown Mnemonic 'CMP'.
+    908  f554					      CMP	$82
+missle.dasm (909): error: Unknown Mnemonic 'BCS'.
+    909  f554					      BCS	LFB43
+missle.dasm (910): error: Unknown Mnemonic 'LDA'.
+    910  f554				   LFB34      LDA	$82
+missle.dasm (911): error: Unknown Mnemonic 'CMP'.
+    911  f554					      CMP	$83
+missle.dasm (912): error: Unknown Mnemonic 'BCC'.
+    912  f554					      BCC	LFB43
+missle.dasm (913): error: Unknown Mnemonic 'LDX'.
+    913  f554					      LDX	#$10
+missle.dasm (914): error: Unknown Mnemonic 'LDA'.
+    914  f554				   LFB3C      LDA	$83
+missle.dasm (915): error: Unknown Mnemonic 'CLC'.
+    915  f554					      CLC
+missle.dasm (916): error: Unknown Mnemonic 'ADC'.
+    916  f554					      ADC	$99
+missle.dasm (917): error: Unknown Mnemonic 'BNE'.
+    917  f554					      BNE	LFB4F
+missle.dasm (918): error: Unknown Mnemonic 'LDX'.
+    918  f554				   LFB43      LDX	#$F0
+missle.dasm (919): error: Unknown Mnemonic 'BNE'.
+    919  f554					      BNE	LFB4D
+missle.dasm (920): error: Unknown Mnemonic 'LDX'.
+    920  f554				   LFB47      LDX	#$F0
+missle.dasm (921): error: Unknown Mnemonic 'BNE'.
+    921  f554					      BNE	LFB3C
+missle.dasm (922): error: Unknown Mnemonic 'LDX'.
+    922  f554				   LFB4B      LDX	#$10
+missle.dasm (923): error: Unknown Mnemonic 'LDA'.
+    923  f554				   LFB4D      LDA	$99
+missle.dasm (924): error: Unknown Mnemonic 'STX'.
+    924  f554				   LFB4F      STX	$DA
+missle.dasm (925): error: Unknown Mnemonic 'TAX'.
+    925  f554					      TAX
+missle.dasm (926): error: Unknown Mnemonic 'LDA'.
+    926  f554					      LDA	$97
+missle.dasm (927): error: Unknown Mnemonic 'AND'.
+    927  f554					      AND	#$02
+missle.dasm (928): error: Unknown Mnemonic 'ORA'.
+    928  f554					      ORA	$DA
+missle.dasm (929): error: Unknown Mnemonic 'STA'.
+    929  f554					      STA	$97
+missle.dasm (930): error: Unknown Mnemonic 'TXA'.
+    930  f554					      TXA
+missle.dasm (931): error: Unknown Mnemonic 'LDY'.
+    931  f554					      LDY	#$53
+missle.dasm (932): error: Unknown Mnemonic 'STY'.
+    932  f554					      STY	$93
+missle.dasm (933): error: Unknown Mnemonic 'SEC'.
+    933  f554					      SEC
+missle.dasm (934): error: Unknown Mnemonic 'SBC'.
+    934  f554					      SBC	$82
+missle.dasm (935): error: Unknown Mnemonic 'BCS'.
+    935  f554					      BCS	LFB68
+missle.dasm (936): error: Unknown Mnemonic 'EOR'.
+    936  f554					      EOR	#$FF
+missle.dasm (937): error: Unknown Mnemonic 'ADC'.
+    937  f554					      ADC	#$01
+missle.dasm (938): error: Unknown Mnemonic 'STY'.
+    938  f554				   LFB68      STY	$81
+missle.dasm (939): error: Unknown Mnemonic 'JSR'.
+    939  f554					      JSR	LFB7B
+missle.dasm (940): error: Unknown Mnemonic 'STX'.
+    940  f554					      STX	$87
+missle.dasm (941): error: Unknown Mnemonic 'LDX'.
+    941  f554					      LDX	#$00
+missle.dasm (942): error: Unknown Mnemonic 'STA'.
+    942  f554					      STA	$DA
+missle.dasm (943): error: Unknown Mnemonic 'JSR'.
+    943  f554					      JSR	LFB7F
+missle.dasm (944): error: Unknown Mnemonic 'STX'.
+    944  f554					      STX	$86
+missle.dasm (945): error: Unknown Mnemonic 'JMP'.
+    945  f554					      JMP	LFB99
+missle.dasm (946): error: Unknown Mnemonic 'STA'.
+    946  f554				   LFB7B      STA	$DA
+missle.dasm (947): error: Unknown Mnemonic 'LDA'.
+    947  f554					      LDA	#$00
+missle.dasm (948): error: Unknown Mnemonic 'LDY'.
+    948  f554				   LFB7F      LDY	#$07
+missle.dasm (949): error: Unknown Mnemonic 'ROL'.
+    949  f554				   LFB81      ROL	$DA
+missle.dasm (950): error: Unknown Mnemonic 'ROL'.
+    950  f554					      ROL	A
+missle.dasm (951): error: Unknown Mnemonic 'BCS'.
+    951  f554					      BCS	LFB94
+missle.dasm (952): error: Unknown Mnemonic 'CMP'.
+    952  f554					      CMP	$81
+missle.dasm (953): error: Unknown Mnemonic 'BCC'.
+    953  f554					      BCC	LFB8C
+missle.dasm (954): error: Unknown Mnemonic 'SBC'.
+    954  f554					      SBC	$81
+missle.dasm (955): error: Unknown Mnemonic 'DEY'.
+    955  f554				   LFB8C      DEY
+missle.dasm (956): error: Unknown Mnemonic 'BPL'.
+    956  f554					      BPL	LFB81
+missle.dasm (957): error: Unknown Mnemonic 'ROL'.
+    957  f554					      ROL	$DA
+missle.dasm (958): error: Unknown Mnemonic 'LDX'.
+    958  f554					      LDX	$DA
+missle.dasm (959): error: Unknown Mnemonic 'RTS'.
+    959  f554					      RTS
+    960  f554
+missle.dasm (961): error: Unknown Mnemonic 'SBC'.
+    961  f554				   LFB94      SBC	$81
+missle.dasm (962): error: Unknown Mnemonic 'SEC'.
+    962  f554					      SEC
+missle.dasm (963): error: Unknown Mnemonic 'BCS'.
+    963  f554					      BCS	LFB8C
+missle.dasm (964): error: Unknown Mnemonic 'LDA'.
+    964  f554				   LFB99      LDA	$86
+missle.dasm (965): error: Unknown Mnemonic 'STA'.
+    965  f554					      STA	$95
+missle.dasm (966): error: Unknown Mnemonic 'LDA'.
+    966  f554					      LDA	$97
+missle.dasm (967): error: Unknown Mnemonic 'AND'.
+    967  f554					      AND	#$02
+missle.dasm (968): error: Unknown Mnemonic 'BNE'.
+    968  f554					      BNE	LFBAD
+missle.dasm (969): error: Unknown Mnemonic 'LDY'.
+    969  f554					      LDY	$91
+missle.dasm (970): error: Unknown Mnemonic 'LDA'.
+    970  f554					      LDA	$DE
+missle.dasm (971): error: Unknown Mnemonic 'CLC'.
+    971  f554					      CLC
+missle.dasm (972): error: Unknown Mnemonic 'SBC'.
+    972  f554					      SBC	LFDD5,Y
+missle.dasm (973): error: Unknown Mnemonic 'STA'.
+    973  f554					      STA	$DE
+missle.dasm (974): error: Unknown Mnemonic 'CLC'.
+    974  f554				   LFBAD      CLC
+missle.dasm (975): error: Unknown Mnemonic 'RTS'.
+    975  f554					      RTS
+    976  f554
+    977  f554		       a5 91 29 07*LFBAF      .byte.b	$A5,$91,$29,$07,$A8,$B9,$D5,$FD,$85,$82,$B9,$DD,$FD,$A8,$B9,$05
+    978  f564		       fe 85 8b a9*	      .byte.b	$FE,$85,$8B,$A9,$FE,$85,$8C,$A9,$53,$85,$81,$A5,$95,$85,$DA,$20
+    979  f574		       6f fc a4 82*	      .byte.b	$6F,$FC,$A4,$82,$A5,$99,$18,$71,$8B,$A6,$97,$E0,$F0,$B0,$06,$38
+    980  f584		       e5 87 4c e7*	      .byte.b	$E5,$87,$4C,$E7,$FB,$18,$65,$87,$85,$81,$A0,$00,$B9,$EC,$FD,$38
+    981  f594		       e9 04 c5 81*	      .byte.b	$E9,$04,$C5,$81,$B0,$06,$69,$08,$C5,$81,$B0,$07,$C8,$C0,$07,$D0
+    982  f5a4		       eb f0 35 c0*	      .byte.b	$EB,$F0,$35,$C0,$06,$D0,$16,$A9,$20,$85,$DC,$A5,$DF,$29,$0F,$09
+    983  f5b4		       30 85 df a9*	      .byte.b	$30,$85,$DF,$A9,$50,$85,$E1,$A9,$00,$85,$DD,$F0,$1B,$98,$0A,$AA
+    984  f5c4		       a0 40 b5 a9*	      .byte.b	$A0,$40,$B5,$A9,$C9,$5B,$F0,$0E,$A0,$2E,$A5,$DF,$29,$0F,$09,$40
+    985  f5d4		       85 df a9 50*	      .byte.b	$85,$DF,$A9,$50,$85,$E1,$94,$A9,$C6,$82,$10,$96,$A9,$FF,$85,$91
+    986  f5e4		       a9 55 85 93*	      .byte.b	$A9,$55,$85,$93,$60,$8A,$38,$E5,$82,$B0,$04,$49,$FF,$69,$01,$85
+    987  f5f4		       82 98 38 e5*	      .byte.b	$82,$98,$38,$E5,$83,$B0,$04,$49,$FF,$69,$01,$C5,$82,$90,$05,$A6
+    988  f604		       82 85 82 8a*	      .byte.b	$82,$85,$82,$8A,$4A,$4A,$85,$83,$0A,$65,$83,$4A,$18,$65,$82,$60
+    989  f614		       a9 00 85 87*	      .byte.b	$A9,$00,$85,$87,$A2,$08,$0A,$26,$87,$06,$81,$90,$07,$18,$65,$DA
+    990  f624		       90 02 e6 87*	      .byte.b	$90,$02,$E6,$87,$CA,$D0,$EF,$85,$86,$60
+missle.dasm (991): error: Unknown Mnemonic 'ASL'.
+    991  f624				   LFC89      ASL	$D8
+missle.dasm (992): error: Unknown Mnemonic 'ROL'.
+    992  f624					      ROL	$D9
+missle.dasm (993): error: Unknown Mnemonic 'BPL'.
+    993  f624					      BPL	LFC91
+missle.dasm (994): error: Unknown Mnemonic 'INC'.
+    994  f624					      INC	$D8
+missle.dasm (995): error: Unknown Mnemonic 'LDA'.
+    995  f624				   LFC91      LDA	$D8
+missle.dasm (996): error: Unknown Mnemonic 'BIT'.
+    996  f624					      BIT	LFDC7
+missle.dasm (997): error: Unknown Mnemonic 'BEQ'.
+    997  f624					      BEQ	LFC9C
+missle.dasm (998): error: Unknown Mnemonic 'EOR'.
+    998  f624					      EOR	#$01
+missle.dasm (999): error: Unknown Mnemonic 'STA'.
+    999  f624					      STA	$D8
+missle.dasm (1000): error: Unknown Mnemonic 'ORA'.
+   1000  f624				   LFC9C      ORA	$D9
+missle.dasm (1001): error: Unknown Mnemonic 'BNE'.
+   1001  f624					      BNE	LFCA2
+missle.dasm (1002): error: Unknown Mnemonic 'INC'.
+   1002  f624					      INC	$D8
+missle.dasm (1003): error: Unknown Mnemonic 'LDA'.
+   1003  f624				   LFCA2      LDA	$D8
+missle.dasm (1004): error: Unknown Mnemonic 'RTS'.
+   1004  f624					      RTS
+   1005  f62e
+missle.dasm (1006): error: Unknown Mnemonic 'LDY'.
+   1006  f62e				   LFCA5      LDY	#$01
+missle.dasm (1007): error: Unknown Mnemonic 'LDA'.
+   1007  f62e					      LDA	$DB
+missle.dasm (1008): error: Unknown Mnemonic 'AND'.
+   1008  f62e					      AND	#$03
+missle.dasm (1009): error: Unknown Mnemonic 'BEQ'.
+   1009  f62e					      BEQ	LFCB7
+missle.dasm (1010): error: Unknown Mnemonic 'CMP'.
+   1010  f62e					      CMP	#$01
+missle.dasm (1011): error: Unknown Mnemonic 'BEQ'.
+   1011  f62e					      BEQ	LFCB6
+missle.dasm (1012): error: Unknown Mnemonic 'LDA'.
+   1012  f62e					      LDA	#$00
+missle.dasm (1013): error: Unknown Mnemonic 'STA'.
+   1013  f62e					      STA	$DD
+missle.dasm (1014): error: Unknown Mnemonic 'RTS'.
+   1014  f62e					      RTS
+   1015  f62e
+missle.dasm (1016): error: Unknown Mnemonic 'INY'.
+   1016  f62e				   LFCB6      INY
+missle.dasm (1017): error: Unknown Mnemonic 'TYA'.
+   1017  f62e				   LFCB7      TYA
+missle.dasm (1018): error: Unknown Mnemonic 'ORA'.
+   1018  f62e					      ORA	$DB
+missle.dasm (1019): error: Unknown Mnemonic 'STA'.
+   1019  f62e					      STA	$DB
+missle.dasm (1020): error: Unknown Mnemonic 'LDA'.
+   1020  f62e					      LDA	#$0A
+missle.dasm (1021): error: Unknown Mnemonic 'STA'.
+   1021  f62e					      STA	$DD
+missle.dasm (1022): error: Unknown Mnemonic 'RTS'.
+   1022  f62e					      RTS
+   1023  f62e
+missle.dasm (1024): error: Unknown Mnemonic 'STA'.
+   1024  f62e				   LFCC1      STA	$DA
+missle.dasm (1025): error: Unknown Mnemonic 'LDX'.
+   1025  f62e					      LDX	#$05
+missle.dasm (1026): error: Unknown Mnemonic 'LDA'.
+   1026  f62e					      LDA	$E7
+missle.dasm (1027): error: Unknown Mnemonic 'CMP'.
+   1027  f62e					      CMP	#$0C
+missle.dasm (1028): error: Unknown Mnemonic 'BCS'.
+   1028  f62e					      BCS	LFCCD
+missle.dasm (1029): error: Unknown Mnemonic 'LSR'.
+   1029  f62e					      LSR	A
+missle.dasm (1030): error: Unknown Mnemonic 'TAX'.
+   1030  f62e					      TAX
+missle.dasm (1031): error: Unknown Mnemonic 'STX'.
+   1031  f62e				   LFCCD      STX	$82
+missle.dasm (1032): error: Unknown Mnemonic 'LDX'.
+   1032  f62e				   LFCCF      LDX	$F5
+missle.dasm (1033): error: Unknown Mnemonic 'LDA'.
+   1033  f62e					      LDA	$DA
+missle.dasm (1034): error: Unknown Mnemonic 'SED'.
+   1034  f62e					      SED
+missle.dasm (1035): error: Unknown Mnemonic 'CLC'.
+   1035  f62e					      CLC
+missle.dasm (1036): error: Unknown Mnemonic 'ADC'.
+   1036  f62e					      ADC	$EF,X
+missle.dasm (1037): error: Unknown Mnemonic 'STA'.
+   1037  f62e					      STA	$EF,X
+missle.dasm (1038): error: Unknown Mnemonic 'TYA'.
+   1038  f62e					      TYA
+missle.dasm (1039): error: Unknown Mnemonic 'ADC'.
+   1039  f62e					      ADC	$F1,X
+missle.dasm (1040): error: Unknown Mnemonic 'STA'.
+   1040  f62e					      STA	$F1,X
+missle.dasm (1041): error: Unknown Mnemonic 'LDA'.
+   1041  f62e					      LDA	#$00
+missle.dasm (1042): error: Unknown Mnemonic 'ADC'.
+   1042  f62e					      ADC	$F3,X
+missle.dasm (1043): error: Unknown Mnemonic 'STA'.
+   1043  f62e					      STA	$F3,X
+missle.dasm (1044): error: Unknown Mnemonic 'CLD'.
+   1044  f62e					      CLD
+missle.dasm (1045): error: Unknown Mnemonic 'DEC'.
+   1045  f62e					      DEC	$82
+missle.dasm (1046): error: Unknown Mnemonic 'BPL'.
+   1046  f62e					      BPL	LFCCF
+missle.dasm (1047): error: Unknown Mnemonic 'RTS'.
+   1047  f62e					      RTS
+   1048  f62e
+   1049  f62e		       a2 00 8a b4*LFCEA      .byte.b	$A2,$00,$8A,$B4,$A9,$C0,$25,$F0,$01,$18,$2A,$E8,$E8,$E0,$0C,$D0
+   1050  f63e		       f2 a6 f5 95*	      .byte.b	$F2,$A6,$F5,$95,$EC
+missle.dasm (1051): error: Unknown Mnemonic 'LDX'.
+   1051  f63e				   LFCFF      LDX	#$FF
+missle.dasm (1052): error: Unknown Mnemonic 'STX'.
+   1052  f63e					      STX	$DE
+missle.dasm (1053): error: Unknown Mnemonic 'INX'.
+   1053  f63e					      INX
+missle.dasm (1054): error: Unknown Mnemonic 'STX'.
+   1054  f63e					      STX	$90
+missle.dasm (1055): error: Unknown Mnemonic 'STX'.
+   1055  f63e					      STX	$8E
+missle.dasm (1056): error: Unknown Mnemonic 'STX'.
+   1056  f63e					      STX	$E0
+missle.dasm (1057): error: Unknown Mnemonic 'RTS'.
+   1057  f63e					      RTS
+   1058  f643
+missle.dasm (1059): error: Unknown Mnemonic 'BIT'.
+   1059  f643				   LFD0B      BIT	$F8
+missle.dasm (1060): error: Unknown Mnemonic 'BMI'.
+   1060  f643					      BMI	LFD2D
+missle.dasm (1061): error: Unknown Mnemonic 'LDA'.
+   1061  f643					      LDA	$EC
+missle.dasm (1062): error: Unknown Mnemonic 'BNE'.
+   1062  f643					      BNE	LFD42
+missle.dasm (1063): error: Unknown Mnemonic 'LDA'.
+   1063  f643				   LFD13      LDA	#$07
+missle.dasm (1064): error: Unknown Mnemonic 'STA'.
+   1064  f643					      STA	$DF
+missle.dasm (1065): error: Unknown Mnemonic 'LDX'.
+   1065  f643					      LDX	#$FF
+missle.dasm (1066): error: Unknown Mnemonic 'STX'.
+   1066  f643					      STX	$FB
+missle.dasm (1067): error: Unknown Mnemonic 'LDA'.
+   1067  f643					      LDA	$E9
+missle.dasm (1068): error: Unknown Mnemonic 'CMP'.
+   1068  f643					      CMP	#$13
+missle.dasm (1069): error: Unknown Mnemonic 'BNE'.
+   1069  f643					      BNE	LFCFF
+missle.dasm (1070): error: Unknown Mnemonic 'LDA'.
+   1070  f643					      LDA	$F1
+missle.dasm (1071): error: Unknown Mnemonic 'ORA'.
+   1071  f643					      ORA	$F3
+missle.dasm (1072): error: Unknown Mnemonic 'BNE'.
+   1072  f643					      BNE	LFCFF
+missle.dasm (1073): error: Unknown Mnemonic 'LDA'.
+   1073  f643					      LDA	#$F1
+missle.dasm (1074): error: Unknown Mnemonic 'STA'.
+   1074  f643					      STA	$B3
+missle.dasm (1075): error: Unknown Mnemonic 'BNE'.
+   1075  f643					      BNE	LFCFF
+missle.dasm (1076): error: Unknown Mnemonic 'LDA'.
+   1076  f643				   LFD2D      LDA	$EC
+missle.dasm (1077): error: Unknown Mnemonic 'ORA'.
+   1077  f643					      ORA	$ED
+missle.dasm (1078): error: Unknown Mnemonic 'BEQ'.
+   1078  f643					      BEQ	LFD13
+missle.dasm (1079): error: Unknown Mnemonic 'LDA'.
+   1079  f643					      LDA	$F5
+missle.dasm (1080): error: Unknown Mnemonic 'EOR'.
+   1080  f643					      EOR	#$01
+missle.dasm (1081): error: Unknown Mnemonic 'TAX'.
+   1081  f643					      TAX
+missle.dasm (1082): error: Unknown Mnemonic 'LDA'.
+   1082  f643					      LDA	$EC,X
+missle.dasm (1083): error: Unknown Mnemonic 'BNE'.
+   1083  f643					      BNE	LFD40
+missle.dasm (1084): error: Unknown Mnemonic 'LDX'.
+   1084  f643					      LDX	$F5
+missle.dasm (1085): error: Unknown Mnemonic 'BPL'.
+   1085  f643					      BPL	LFD46
+missle.dasm (1086): error: Unknown Mnemonic 'STX'.
+   1086  f643				   LFD40      STX	$F5
+missle.dasm (1087): error: Unknown Mnemonic 'LDX'.
+   1087  f643				   LFD42      LDX	$F5
+missle.dasm (1088): error: Unknown Mnemonic 'BNE'.
+   1088  f643					      BNE	LFD5A
+missle.dasm (1089): error: Unknown Mnemonic 'INC'.
+   1089  f643				   LFD46      INC	$E7
+missle.dasm (1090): error: Unknown Mnemonic 'LDA'.
+   1090  f643					      LDA	$E7
+missle.dasm (1091): error: Unknown Mnemonic 'CMP'.
+   1091  f643					      CMP	#$10
+missle.dasm (1092): error: Unknown Mnemonic 'BCS'.
+   1092  f643					      BCS	LFD5A
+missle.dasm (1093): error: Unknown Mnemonic 'LDA'.
+   1093  f643					      LDA	$9B
+missle.dasm (1094): error: Unknown Mnemonic 'ADC'.
+   1094  f643					      ADC	#$08
+missle.dasm (1095): error: Unknown Mnemonic 'BIT'.
+   1095  f643					      BIT	$FB
+missle.dasm (1096): error: Unknown Mnemonic 'BVS'.
+   1096  f643					      BVS	LFD58
+missle.dasm (1097): error: Unknown Mnemonic 'ADC'.
+   1097  f643					      ADC	#$05
+missle.dasm (1098): error: Unknown Mnemonic 'STA'.
+   1098  f643				   LFD58      STA	$9B
+missle.dasm (1099): error: Unknown Mnemonic 'LDA'.
+   1099  f643				   LFD5A      LDA	$EC,X
+missle.dasm (1100): error: Unknown Mnemonic 'LDX'.
+   1100  f643					      LDX	#$0A
+missle.dasm (1101): error: Unknown Mnemonic 'LSR'.
+   1101  f643				   LFD5E      LSR	A
+missle.dasm (1102): error: Unknown Mnemonic 'LDY'.
+   1102  f643					      LDY	#$25
+missle.dasm (1103): error: Unknown Mnemonic 'BCS'.
+   1103  f643					      BCS	LFD65
+missle.dasm (1104): error: Unknown Mnemonic 'LDY'.
+   1104  f643					      LDY	#$5B
+missle.dasm (1105): error: Unknown Mnemonic 'STY'.
+   1105  f643				   LFD65      STY	$A9,X
+missle.dasm (1106): error: Unknown Mnemonic 'DEX'.
+   1106  f643					      DEX
+missle.dasm (1107): error: Unknown Mnemonic 'DEX'.
+   1107  f643					      DEX
+missle.dasm (1108): error: Unknown Mnemonic 'BPL'.
+   1108  f643					      BPL	LFD5E
+missle.dasm (1109): error: Unknown Mnemonic 'RTS'.
+   1109  f643					      RTS
+   1110  f643
+   1111  f643		       48 4a 4a 4a*LFD6C      .byte.b	$48,$4A,$4A,$4A,$4A,$A8,$B9,$0B,$FF,$95,$CB,$68,$29,$0F,$A8,$B9
+   1112  f653		       0b ff 95 cd	      .byte.b	$0B,$FF,$95,$CD
+missle.dasm (1113): error: Unknown Mnemonic 'RTS'.
+   1113  f653				   LFD80      RTS
+   1114  f657
+missle.dasm (1115): error: Unknown Mnemonic 'LDX'.
+   1115  f657				   LFD81      LDX	$F5
+missle.dasm (1116): error: Unknown Mnemonic 'LDA'.
+   1116  f657					      LDA	$F3,X
+missle.dasm (1117): error: Unknown Mnemonic 'CMP'.
+   1117  f657					      CMP	$F6,X
+missle.dasm (1118): error: Unknown Mnemonic 'BEQ'.
+   1118  f657					      BEQ	LFD80
+missle.dasm (1119): error: Unknown Mnemonic 'LDA'.
+   1119  f657					      LDA	$EC,X
+missle.dasm (1120): error: Unknown Mnemonic 'CMP'.
+   1120  f657					      CMP	#$3F
+missle.dasm (1121): error: Unknown Mnemonic 'BEQ'.
+   1121  f657					      BEQ	LFD80
+missle.dasm (1122): error: Unknown Mnemonic 'LDA'.
+   1122  f657					      LDA	#$06
+missle.dasm (1123): error: Unknown Mnemonic 'STA'.
+   1123  f657					      STA	$DF
+missle.dasm (1124): error: Unknown Mnemonic 'LDA'.
+   1124  f657					      LDA	#$A0
+missle.dasm (1125): error: Unknown Mnemonic 'STA'.
+   1125  f657					      STA	$E0
+missle.dasm (1126): error: Unknown Mnemonic 'LDA'.
+   1126  f657					      LDA	$D8
+missle.dasm (1127): error: Unknown Mnemonic 'AND'.
+   1127  f657					      AND	#$07
+missle.dasm (1128): error: Unknown Mnemonic 'CMP'.
+   1128  f657					      CMP	#$06
+missle.dasm (1129): error: Unknown Mnemonic 'BCC'.
+   1129  f657					      BCC	LFDA1
+missle.dasm (1130): error: Unknown Mnemonic 'SBC'.
+   1130  f657					      SBC	#$04
+missle.dasm (1131): error: Unknown Mnemonic 'TAY'.
+   1131  f657				   LFDA1      TAY
+missle.dasm (1132): error: Unknown Mnemonic 'LDA'.
+   1132  f657					      LDA	LFE7C,Y
+missle.dasm (1133): error: Unknown Mnemonic 'STA'.
+   1133  f657				   LFDA5      STA	$DA
+missle.dasm (1134): error: Unknown Mnemonic 'LDA'.
+   1134  f657				   LFDA7      LDA	$DA
+missle.dasm (1135): error: Unknown Mnemonic 'AND'.
+   1135  f657					      AND	$EC,X
+missle.dasm (1136): error: Unknown Mnemonic 'BEQ'.
+   1136  f657					      BEQ	LFDB5
+missle.dasm (1137): error: Unknown Mnemonic 'LSR'.
+   1137  f657					      LSR	$DA
+missle.dasm (1138): error: Unknown Mnemonic 'BCC'.
+   1138  f657					      BCC	LFDA7
+missle.dasm (1139): error: Unknown Mnemonic 'LDA'.
+   1139  f657					      LDA	#$20
+missle.dasm (1140): error: Unknown Mnemonic 'BNE'.
+   1140  f657					      BNE	LFDA5
+missle.dasm (1141): error: Unknown Mnemonic 'LDA'.
+   1141  f657				   LFDB5      LDA	$F6,X
+missle.dasm (1142): error: Unknown Mnemonic 'SED'.
+   1142  f657					      SED
+missle.dasm (1143): error: Unknown Mnemonic 'CLC'.
+   1143  f657					      CLC
+missle.dasm (1144): error: Unknown Mnemonic 'ADC'.
+   1144  f657					      ADC	#$01
+missle.dasm (1145): error: Unknown Mnemonic 'CLD'.
+   1145  f657					      CLD
+missle.dasm (1146): error: Unknown Mnemonic 'STA'.
+   1146  f657					      STA	$F6,X
+missle.dasm (1147): error: Unknown Mnemonic 'LDA'.
+   1147  f657					      LDA	$EC,X
+missle.dasm (1148): error: Unknown Mnemonic 'ORA'.
+   1148  f657					      ORA	$DA
+missle.dasm (1149): error: Unknown Mnemonic 'STA'.
+   1149  f657					      STA	$EC,X
+missle.dasm (1150): error: Unknown Mnemonic 'BNE'.
+   1150  f657					      BNE	LFD81
+missle.dasm (1151): error: Unknown Mnemonic 'ORA'.
+   1151  f657					      ORA	($02,X)
+   1152  f657		       03		      .byte.b	$03	;.SLO
+   1153  f658		       04		      .byte.b	$04	;.NOP
+   1154  f659		       02		      .byte.b	$02	;.JAM
+   1155  f65a		       04		      .byte.b	$04	;.NOP
+missle.dasm (1156): error: Unknown Mnemonic 'ASL'.
+   1156  f65a					      ASL	COLUPF
+missle.dasm (1157): error: Unknown Mnemonic 'ASL'.
+   1157  f65a					      ASL	NUSIZ0
+   1158  f65b		       02		      .byte.b	$02	;.JAM
+   1159  f65c		       04		      .byte.b	$04	;.NOP
+   1160  f65d		       03		      .byte.b	$03	;.SLO
+   1161  f65e		       02		      .byte.b	$02	;.JAM
+missle.dasm (1162): error: Unknown Mnemonic 'ORA'.
+   1162  f65e					      ORA	($00,X)
+missle.dasm (1163): error: Unknown Mnemonic 'ORA'.
+   1163  f65e					      ORA	($01,X)
+   1164  f65f		       02		      .byte.b	$02	;.JAM
+missle.dasm (1165): error: Unknown Mnemonic 'ORA'.
+   1165  f65f					      ORA	($00,X)
+   1166  f660		       02		      .byte.b	$02	;.JAM
+missle.dasm (1167): error: Unknown Mnemonic 'ORA'.
+   1167  f660					      ORA	($00,X)
+missle.dasm (1168): error: Unknown Mnemonic 'ORA'.
+   1168  f660					      ORA	($03,X)
+   1169  f661		       02		      .byte.b	$02	;.JAM
+missle.dasm (1170): error: Unknown Mnemonic 'ORA'.
+   1170  f661					      ORA	VSYNC
+   1171  f662		       04		      .byte.b	$04	;.NOP
+missle.dasm (1172): error: Unknown Mnemonic 'BRK'.
+   1172  f662				   LFDE4      BRK
+missle.dasm (1173): error: Unknown Mnemonic 'BPL'.
+   1173  f662					      BPL	LFE07
+missle.dasm (1174): error: Unknown Mnemonic 'JSR'.
+   1174  f662					      JSR.w	$0040
+missle.dasm (1175): error: Unknown Mnemonic 'RTI'.
+   1175  f662					      RTI
+   1176  f663
+   1177  f663		       00	   LFDEB      .byte.b	$00
+   1178  f664		       18 28 38 6a*LFDEC      .byte.b	$18,$28,$38,$6A,$7A,$8A,$50,$50
+   1179  f66c		       00 01 02 03*LFDF4      .byte.b	$00,$01,$02,$03,$04,$00,$06,$04
+   1180  f674		       00 00 02    LFDFC      .byte.b	$00,$00,$02
+   1181  f677		       06 08 04 00*LFDFF      .byte.b	$06,$08,$04,$00,$02,$0A,$0F,$10
+   1182  f67f		       12	   LFE07      .byte.b	$12	;.JAM
+missle.dasm (1183): error: Unknown Mnemonic 'ORA'.
+   1183  f67f					      ORA	AUDF0,X
+   1184  f680		       1a		      .byte.b	$1A	;.NOP
+   1185  f681		       02		      .byte.b	$02	;.JAM
+missle.dasm (1186): error: Unknown Mnemonic 'BRK'.
+   1186  f681					      BRK
+missle.dasm (1187): error: Unknown Mnemonic 'BRK'.
+   1187  f681					      BRK
+   1188  f682		       02		      .byte.b	$02	;.JAM
+missle.dasm (1189): error: Unknown Mnemonic 'BRK'.
+   1189  f682				   LFE0F      BRK
+missle.dasm (1190): error: Unknown Mnemonic 'BRK'.
+   1190  f682					      BRK
+missle.dasm (1191): error: Unknown Mnemonic 'BPL'.
+   1191  f682					      BPL	LFE13
+missle.dasm (1192): error: Unknown Mnemonic 'BPL'.
+   1192  f682				   LFE13      BPL	LFE35
+missle.dasm (1193): error: Unknown Mnemonic 'BRK'.
+   1193  f682					      BRK
+missle.dasm (1194): error: Unknown Mnemonic 'JSR'.
+   1194  f682					      JSR	$2000
+missle.dasm (1195): error: Unknown Mnemonic 'RTI'.
+   1195  f682					      RTI
+   1196  f683
+   1197  f683		       00 40 ff 00*LFE1A      .byte.b	$00,$40,$FF,$00,$00,$01,$02,$01,$00,$00,$02,$04,$02,$00,$00,$00
+   1198  f693		       10 00 10 00*	      .byte.b	$10,$00,$10,$00,$00,$20,$00,$20,$00,$00,$40
+missle.dasm (1199): error: Unknown Mnemonic 'BRK'.
+   1199  f693				   LFE35      BRK
+   1200  f69e		       0c		      .byte.b	$0C	;.NOP
+missle.dasm (1201): error: Unknown Mnemonic 'ASL'.
+   1201  f69e					      ASL	A
+missle.dasm (1202): error: Unknown Mnemonic 'PHP'.
+   1202  f69e					      PHP
+missle.dasm (1203): error: Unknown Mnemonic 'ASL'.
+   1203  f69e					      ASL	NUSIZ0
+   1204  f69f		       02		      .byte.b	$02	;.JAM
+missle.dasm (1205): error: Unknown Mnemonic 'BRK'.
+   1205  f69f					      BRK
+missle.dasm (1206): error: Unknown Mnemonic 'BRK'.
+   1206  f69f					      BRK
+   1207  f6a0		       0f		      .byte.b	$0F	;.SLO
+   1208  f6a1		       0c		      .byte.b	$0C	;.NOP
+missle.dasm (1209): error: Unknown Mnemonic 'ASL'.
+   1209  f6a1					      ASL	A
+missle.dasm (1210): error: Unknown Mnemonic 'PHP'.
+   1210  f6a1					      PHP
+missle.dasm (1211): error: Unknown Mnemonic 'ASL'.
+   1211  f6a1					      ASL	A
+missle.dasm (1212): error: Unknown Mnemonic 'PHP'.
+   1212  f6a1					      PHP
+missle.dasm (1213): error: Unknown Mnemonic 'PHP'.
+   1213  f6a1					      PHP
+missle.dasm (1214): error: Unknown Mnemonic 'ASL'.
+   1214  f6a1					      ASL	NUSIZ0
+   1215  f6a2		       04		      .byte.b	$04	;.NOP
+missle.dasm (1216): error: Unknown Mnemonic 'PHP'.
+   1216  f6a2					      PHP
+missle.dasm (1217): error: Unknown Mnemonic 'PHP'.
+   1217  f6a2					      PHP
+missle.dasm (1218): error: Unknown Mnemonic 'ASL'.
+   1218  f6a2					      ASL	NUSIZ0
+   1219  f6a3		       02		      .byte.b	$02	;.JAM
+   1220  f6a4		       13		      .byte.b	$13	;.SLO
+   1221  f6a5		       14		      .byte.b	$14	;.NOP
+missle.dasm (1222): error: Unknown Mnemonic 'ORA'.
+   1222  f6a5					      ORA	AUDC1,X
+   1223  f6a6		       0c	   LFE51      .byte.b	$0C	;.NOP
+   1224  f6a7		       0f		      .byte.b	$0F	;.SLO
+   1225  f6a8		       12		      .byte.b	$12	;.JAM
+   1226  f6a9		       0c		      .byte.b	$0C	;.NOP
+missle.dasm (1227): error: Unknown Mnemonic 'BPL'.
+   1227  f6a9					      BPL	LFE65
+missle.dasm (1228): error: Unknown Mnemonic 'ORA'.
+   1228  f6a9					      ORA	($0A),Y
+missle.dasm (1229): error: Unknown Mnemonic 'ORA'.
+   1229  f6a9					      ORA	$1310
+   1230  f6aa		       0c		      .byte.b	$0C	;.NOP
+missle.dasm (1231): error: Unknown Mnemonic 'ASL'.
+   1231  f6aa					      ASL	$1210
+   1232  f6ab		       14		      .byte.b	$14	;.NOP
+missle.dasm (1233): error: Unknown Mnemonic 'LDY'.
+   1233  f6ab					      LDY	#$80
+missle.dasm (1234): error: Unknown Mnemonic 'BRK'.
+   1234  f6ab				   LFE63      BRK
+missle.dasm (1235): error: Unknown Mnemonic 'BRK'.
+   1235  f6ab					      BRK
+missle.dasm (1236): error: Unknown Mnemonic 'BRK'.
+   1236  f6ab				   LFE65      BRK
+missle.dasm (1237): error: Unknown Mnemonic 'BRK'.
+   1237  f6ab					      BRK
+missle.dasm (1238): error: Unknown Mnemonic 'BRK'.
+   1238  f6ab					      BRK
+missle.dasm (1239): error: Unknown Mnemonic 'ORA'.
+   1239  f6ab					      ORA	($01,X)
+   1240  f6ac		       02		      .byte.b	$02	;.JAM
+   1241  f6ad		       03		      .byte.b	$03	;.SLO
+   1242  f6ae		       04		      .byte.b	$04	;.NOP
+   1243  f6af		       04		      .byte.b	$04	;.NOP
+missle.dasm (1244): error: Unknown Mnemonic 'ORA'.
+   1244  f6af					      ORA	NUSIZ1
+missle.dasm (1245): error: Unknown Mnemonic 'ASL'.
+   1245  f6af					      ASL	COLUP0
+   1246  f6b0		       07	   LFE72      .byte.b	$07	;.SLO
+missle.dasm (1247): error: Unknown Mnemonic 'BRK'.
+   1247  f6b0					      BRK
+missle.dasm (1248): error: Unknown Mnemonic 'ORA'.
+   1248  f6b0					      ORA	($40,X)
+missle.dasm (1249): error: Unknown Mnemonic 'EOR'.
+   1249  f6b0					      EOR	($06,X)
+   1250  f6b1		       07		      .byte.b	$07	;.SLO
+missle.dasm (1251): error: Unknown Mnemonic 'LSR'.
+   1251  f6b1					      LSR	$47
+missle.dasm (1252): error: Unknown Mnemonic 'ASL'.
+   1252  f6b1					      ASL	A
+missle.dasm (1253): error: Unknown Mnemonic 'JSR'.
+   1253  f6b1				   LFE7C      JSR	$0810
+   1254  f6b2		       04		      .byte.b	$04	;.NOP
+   1255  f6b3		       02		      .byte.b	$02	;.JAM
+missle.dasm (1256): error: Unknown Mnemonic 'ORA'.
+   1256  f6b3					      ORA	($0B,X)
+missle.dasm (1257): error: Unknown Mnemonic 'LSR'.
+   1257  f6b3					      LSR	A
+   1258  f6b4		       4b		      .byte.b	$4B	;.ASR
+missle.dasm (1259): error: Unknown Mnemonic 'ASL'.
+   1259  f6b4					      ASL	$4E0F
+   1260  f6b5		       4f		      .byte.b	$4F	;.SRE
+missle.dasm (1261): error: Unknown Mnemonic 'BRK'.
+   1261  f6b5					      BRK
+missle.dasm (1262): error: Unknown Mnemonic 'STY'.
+   1262  f6b5					      STY	$48
+missle.dasm (1263): error: Unknown Mnemonic 'BRK'.
+   1263  f6b5					      BRK
+missle.dasm (1264): error: Unknown Mnemonic 'BIT'.
+   1264  f6b5					      BIT	$47
+missle.dasm (1265): error: Unknown Mnemonic 'STY'.
+   1265  f6b5					      STY	$CE
+missle.dasm (1266): error: Unknown Mnemonic 'BRK'.
+   1266  f6b5					      BRK
+missle.dasm (1267): error: Unknown Mnemonic 'CLD'.
+   1267  f6b5					      CLD
+missle.dasm (1268): error: Unknown Mnemonic 'ASL'.
+   1268  f6b5					      ASL	$48DA
+missle.dasm (1269): error: Unknown Mnemonic 'BRK'.
+   1269  f6b5					      BRK
+missle.dasm (1270): error: Unknown Mnemonic 'STY'.
+   1270  f6b5					      STY	$88
+missle.dasm (1271): error: Unknown Mnemonic 'TXA'.
+   1271  f6b5					      TXA
+   1272  f6b6		       1a		      .byte.b	$1A	;.NOP
+missle.dasm (1273): error: Unknown Mnemonic 'BRK'.
+   1273  f6b6					      BRK
+   1274  f6b7		       44		      .byte.b	$44	;.NOP
+missle.dasm (1275): error: Unknown Mnemonic 'BIT'.
+   1275  f6b7					      BIT	RESMP0
+missle.dasm (1276): error: Unknown Mnemonic 'JMP'.
+   1276  f6b7					      JMP	$DA84
+   1277  f6b8		       da 88 0e c4*LFEA2      .byte.b	$DA,$88,$0E,$C4,$00,$0E,$1A,$0E,$74,$C8,$CA,$44,$00,$1A,$C8,$44
+   1278  f6c8		       20 4d 69 73*	      .byte.b	$20,$4D,$69,$73,$73,$69,$6C,$65,$20,$43,$6F,$6D,$6D,$61,$6E,$64
+   1279  f6d8		       20 54 52 41*	      .byte.b	$20,$54,$52,$41,$4B,$2D,$42,$41,$4C,$4C,$20,$43,$58,$2D,$32,$32
+   1280  f6e8		       20 48 61 63*	      .byte.b	$20,$48,$61,$63,$6B,$20,$76,$31,$2E,$31,$20,$2D,$20,$28,$43,$29
+   1281  f6f8		       20 32 30 30*	      .byte.b	$20,$32,$30,$30,$32,$20,$41,$74,$61,$72,$69,$2C,$20,$54,$68,$6F
+   1282  f708		       6d 61 73 20*	      .byte.b	$6D,$61,$73,$20,$4A,$65,$6E,$74,$7A,$73,$63,$68,$20,$00,$5D,$ED
+   1283  f718		       e9 e5 e1 dd*	      .byte.b	$E9,$E5,$E1,$DD,$D9,$D5,$D1,$CD,$C9,$88,$A3,$AF,$B5,$96,$9D,$C2
+   1284  f728		       a9 8f bc 	      .byte.b	$A9,$8F,$BC
+   1285  f72b		       62 68 6f 77*LFF15      .byte.b	$62,$68,$6F,$77,$62,$68,$6F,$77,$77,$6F,$68,$62,$77,$6F,$68,$62
+   1286  f73b		       ff ff ff 7e*	      .byte.b	$FF,$FF,$FF,$7E,$7E,$76,$36,$26,$22,$FF,$FF,$FF,$7E,$7E,$76,$36
+   1287  f74b		       26 22 ff ff*	      .byte.b	$26,$22,$FF,$FF,$FF,$7E,$FF,$FF,$7E,$7E,$00,$FF,$FF,$3C,$3C,$FF
+   1288  f75b		       ff 7e 00 00*	      .byte.b	$FF,$7E,$00,$00,$FF,$18,$18,$18,$DB,$FF,$FF,$7E,$00,$FF,$18,$18
+   1289  f76b		       18 18 00 81*	      .byte.b	$18,$18,$00,$81,$C3,$7E,$FF,$6D,$00,$00,$00,$00,$00,$00,$00,$00
+   1290  f77b		       18 18 00 00*	      .byte.b	$18,$18,$00,$00,$00,$18,$3C,$3C,$18,$00,$00,$18,$3C,$7E,$7E,$3C
+   1291  f78b		       18 00 18 3c*	      .byte.b	$18,$00,$18,$3C,$7E,$FF,$FF,$7E,$3C,$18,$E0,$E0,$E0,$C0,$C0,$C0
+   1292  f79b		       80 80 80 38*	      .byte.b	$80,$80,$80,$38,$44,$C6,$C6,$C6,$44,$38,$7C,$86,$9E,$78,$E4,$C4
+   1293  f7ab		       78 0c 0c fe*	      .byte.b	$78,$0C,$0C,$FE,$CC,$6C,$3C,$1C,$7C,$C6,$06,$06,$FC,$C0,$FC,$30
+   1294  f7bb		       30 30 30 70*	      .byte.b	$30,$30,$30,$70,$30,$30,$30,$18,$0C,$C6,$FE,$E0,$78,$3C,$0E,$C6
+   1295  f7cb		       7c c6 06 3c*	      .byte.b	$7C,$C6,$06,$3C,$18,$0C,$7E,$78,$0C,$06,$7E,$C6,$C6,$7C,$C6,$C6
+   1296  f7db		       fc c0 60 3c*	      .byte.b	$FC,$C0,$60,$3C,$AA,$54,$28,$10,$A8,$54,$28,$10,$A0,$54,$28,$10
+   1297  f7eb		       80 54 28 10*	      .byte.b	$80,$54,$28,$10,$00,$54,$28,$10,$00,$50,$28,$10,$00,$40,$28,$10
+   1298  f7fb		       00 00 28 10*	      .byte.b	$00,$00,$28,$10,$00,$00,$20,$10,$00,$00,$00,$10,$26,$29,$21,$21
+   1299  f80b		       21 21 f9 00*	      .byte.b	$21,$21,$F9,$00,$00,$00,$00,$39,$F0,$39,$F0

@@ -1,5 +1,46 @@
 # Mac file-system file we don't need to track
 .DS_Store
-# Executables
+
+# Executables and build artifacts
 DiStella.EXE
 distella
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+*.dll
+*.bin
+*.dasm
+*.dysm
+
+# Backup and temporary files
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+
+# Logs
+*.log
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.code-workspace
+
+# Test output
+/test-output/
+
+# Config files
+config.cfg
+
+# Ignore compiled Python (if any)
+__pycache__/
+*.pyc
+
+# Ignore Makefile auto-generated dependencies
+*.d
